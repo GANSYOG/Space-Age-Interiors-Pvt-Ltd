@@ -18,10 +18,13 @@ const IconChevronDown = ({ size = 16, className = "" }) => (
 );
 
 export default function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // @ts-ignore
+  const [isScrolled, setIsScrolled] = useState(false); // eslint-disable-line
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
+  // @ts-ignore
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 }); // eslint-disable-line
+  // @ts-ignore
+  const [isHovering, setIsHovering] = useState(false); // eslint-disable-line
 
   // Navigation Dropdown state
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
@@ -31,6 +34,9 @@ export default function App() {
   const [activeProject, setActiveProject] = useState<any>(null);
   const [activeTab, setActiveTab] = useState('all');
   const [selectedRoom, setSelectedRoom] = useState<string>('living');
+  const [sqFt, setSqFt] = useState(1000);
+  const [ratePerSqFt, setRatePerSqFt] = useState(2499);
+
 
   // Scroll effect for Navbar
   useEffect(() => {
@@ -138,7 +144,7 @@ export default function App() {
     : projects.filter(p => p.category.toLowerCase() === activeTab.toLowerCase());
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] text-[#1A1A1A] selection:bg-[#C9A76A] selection:text-white">
+    <div className="min-h-screen bg-[#FDFBF7] text-[#F5F5F5] selection:bg-[#C9A76A] selection:text-white">
 
       {/* AEO & SEO Structured Data */}
       <script
@@ -151,7 +157,7 @@ export default function App() {
             "image": "https://www.spaceageinteriors.com/logo%20%202.jpeg",
             "url": "https://www.spaceageinteriors.com/",
             "telephone": "+91-9999999999",
-            "priceRange": "$$$$",
+            "priceRange": "₹₹₹₹",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Luxury Studio Lane",
@@ -243,7 +249,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-3 items-center">
 
           {/* Column 1: Left Menu */}
-          <div className="hidden md:flex items-center space-x-10 text-xs tracking-[0.2em] uppercase text-gray-700 font-medium">
+          <div className="hidden md:flex items-center space-x-10 text-xs tracking-[0.2em] uppercase text-gray-300 font-medium">
             <a href="#studio" className="hover:text-[#C9A76A] transition-colors py-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               Studio
             </a>
@@ -259,17 +265,17 @@ export default function App() {
               </a>
 
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 w-64 bg-white border border-gray-200 shadow-2xl py-3 mt-1 flex flex-col z-50">
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-700 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                <div className="absolute top-full left-0 w-64 bg-[#0F0F0F] border border-gray-800 shadow-2xl py-3 mt-1 flex flex-col z-50">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
                     Residential Interiors
                   </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-700 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
                     Commercial Spaces
                   </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-700 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
                     Turnkey Architecture
                   </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-700 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
                     Bespoke Furniture
                   </a>
                 </div>
@@ -284,7 +290,7 @@ export default function App() {
         </div>
 
           {/* Column 3: Right Menu & CTA */}
-          <div className="hidden md:flex items-center justify-end space-x-8 text-xs tracking-[0.2em] uppercase text-gray-700 font-medium">
+          <div className="hidden md:flex items-center justify-end space-x-8 text-xs tracking-[0.2em] uppercase text-gray-300 font-medium">
             <a href="#portfolio" className="hover:text-[#C9A76A] transition-colors py-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               Portfolio
             </a>
@@ -293,7 +299,7 @@ export default function App() {
             </a>
             <button
               onClick={() => setConsultationOpen(true)}
-              className="bg-transparent border border-[#C9A76A] text-[#1A1A1A] px-5 py-2 text-[11px] tracking-[0.2em] uppercase hover:bg-[#C9A76A] hover:text-white transition-all duration-500 font-medium"
+              className="bg-transparent border border-[#C9A76A] text-[#F5F5F5] px-5 py-2 text-[11px] tracking-[0.2em] uppercase hover:bg-[#C9A76A] hover:text-white transition-all duration-500 font-medium"
               onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
             >
               Consult
@@ -302,7 +308,7 @@ export default function App() {
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden col-span-2 text-right">
-            <button className="text-[#1A1A1A]" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <button className="text-[#F5F5F5]" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? <IconX size={26} /> : <IconMenu size={26} />}
             </button>
           </div>
@@ -312,10 +318,10 @@ export default function App() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-[#FDFBF7] z-40 flex flex-col justify-center items-center space-y-6 h-screen">
-          <a href="#studio" className="font-serif text-2xl text-[#1A1A1A] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Studio</a>
-          <a href="#services" className="font-serif text-2xl text-[#1A1A1A] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
-          <a href="#portfolio" className="font-serif text-2xl text-[#1A1A1A] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Portfolio</a>
-          <a href="#experience" className="font-serif text-2xl text-[#1A1A1A] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Experience</a>
+          <a href="#studio" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Studio</a>
+          <a href="#services" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
+          <a href="#portfolio" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Portfolio</a>
+          <a href="#experience" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Experience</a>
           <button
             onClick={() => { setIsMobileMenuOpen(false); setConsultationOpen(true); }}
             className="bg-[#C9A76A] text-white px-8 py-3 text-xs uppercase tracking-widest font-medium mt-4"
@@ -329,7 +335,7 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 bg-white/40 z-10"></div>
+        <div className="absolute inset-0 bg-[#0F0F0F]/40 z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-transparent to-[#FDFBF7] z-10"></div>
 
         <div className="absolute inset-0 w-full h-full">
@@ -341,11 +347,11 @@ export default function App() {
         </div>
 
         <div className="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-5xl mx-auto pt-16">
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-800 italic font-normal mb-6 max-w-2xl leading-snug">
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-200 italic font-normal mb-6 max-w-2xl leading-snug">
             Designing The Future Of Luxury Living.
           </p>
 
-          <p className="text-gray-600 font-light text-sm md:text-base max-w-xl mb-10 leading-relaxed">
+          <p className="text-gray-400 font-light text-sm md:text-base max-w-xl mb-10 leading-relaxed">
             Crafting luminous, high-end residential and commercial spaces defined by natural daylight, tactile stone textures, and precise spatial engineering.
           </p>
 
@@ -360,7 +366,7 @@ export default function App() {
             </a>
             <button
               onClick={() => setConsultationOpen(true)}
-              className="bg-transparent border border-gray-400 text-[#1A1A1A] px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:border-[#1A1A1A] transition-colors duration-500"
+              className="bg-transparent border border-gray-400 text-[#F5F5F5] px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:border-[#1A1A1A] transition-colors duration-500"
               onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
             >
               <IconPlay size={14} className="fill-current text-[#C9A76A]" />
@@ -371,11 +377,11 @@ export default function App() {
       </section>
 
       {/* Interactive Modern House Interior Showcase (Rooms Explorer) */}
-      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-200 bg-[#FDFBF7]">
+      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-800 bg-[#FDFBF7]">
         <div className="text-center mb-16">
           <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-3 font-semibold">Spatial Exploration</span>
-          <h2 className="font-serif text-3xl md:text-5xl mb-4 leading-tight text-[#1A1A1A]">Modern House Interiors</h2>
-          <p className="text-gray-600 font-light text-sm max-w-lg mx-auto">Select a zone below to experience our signature warm luxury design language across different spaces.</p>
+          <h2 className="font-serif text-3xl md:text-5xl mb-4 leading-tight text-[#F5F5F5]">Modern House Interiors</h2>
+          <p className="text-gray-400 font-light text-sm max-w-lg mx-auto">Select a zone below to experience our signature warm luxury design language across different spaces.</p>
 
           {/* Room Selection Tabs */}
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-8">
@@ -390,7 +396,7 @@ export default function App() {
               <button
                 key={room.id}
                 onClick={() => setSelectedRoom(room.id)}
-                className={`px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300 border ${selectedRoom === room.id ? 'bg-[#1A1A1A] text-white border-[#1A1A1A] font-semibold' : 'bg-white text-gray-700 border-gray-200 hover:border-[#C9A76A]'}`}
+                className={`px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300 border ${selectedRoom === room.id ? 'bg-[#1A1A1A] text-white border-[#1A1A1A] font-semibold' : 'bg-[#0F0F0F] text-gray-300 border-gray-800 hover:border-[#C9A76A]'}`}
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
               >
                 {room.label}
@@ -400,7 +406,7 @@ export default function App() {
         </div>
 
         {/* Dynamic Room Preview Display */}
-        <div className="relative rounded-lg overflow-hidden border border-gray-200 bg-white shadow-xl transition-all duration-700">
+        <div className="relative rounded-lg overflow-hidden border border-gray-800 bg-[#0F0F0F] shadow-xl transition-all duration-700">
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
             <div className="lg:col-span-7 h-[400px] md:h-[520px] overflow-hidden relative">
               <img
@@ -411,13 +417,13 @@ export default function App() {
             </div>
             <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center">
               <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs font-semibold mb-3">Signature Space</span>
-              <h3 className="font-serif text-3xl md:text-4xl mb-4 leading-snug text-[#1A1A1A]">{(roomSpaces as any)[selectedRoom].title}</h3>
-              <p className="text-gray-600 font-light text-sm md:text-base leading-relaxed mb-8">
+              <h3 className="font-serif text-3xl md:text-4xl mb-4 leading-snug text-[#F5F5F5]">{(roomSpaces as any)[selectedRoom].title}</h3>
+              <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed mb-8">
                 {(roomSpaces as any)[selectedRoom].subtitle}
               </p>
               <button
                 onClick={() => setConsultationOpen(true)}
-                className="self-start border border-[#1A1A1A] text-[#1A1A1A] px-6 py-3 uppercase tracking-widest text-xs font-medium hover:bg-[#1A1A1A] hover:text-white transition-colors"
+                className="self-start border border-[#1A1A1A] text-[#F5F5F5] px-6 py-3 uppercase tracking-widest text-xs font-medium hover:bg-[#1A1A1A] hover:text-white transition-colors"
               >
                 Inquire For This Space
               </button>
@@ -427,25 +433,25 @@ export default function App() {
       </section>
 
       {/* Studio / About Section */}
-      <section id="studio" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-200">
+      <section id="studio" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-800">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">The Studio</span>
-            <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight text-[#1A1A1A]">
+            <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight text-[#F5F5F5]">
               A minimalist approach to <br/>
               <span className="text-[#C9A76A] italic">maximal living.</span>
             </h2>
-            <p className="text-gray-600 text-base md:text-lg font-light leading-relaxed mb-10 max-w-lg">
+            <p className="text-gray-400 text-base md:text-lg font-light leading-relaxed mb-10 max-w-lg">
               We transcend traditional interior design. By fusing world-class architectural principles with cutting-edge spatial technology, we craft environments that don't just look spectacular—they anticipate your lifestyle.
             </p>
 
-            <div className="grid grid-cols-2 gap-8 border-t border-gray-200 pt-10">
+            <div className="grid grid-cols-2 gap-8 border-t border-gray-800 pt-10">
               <div>
-                <div className="text-4xl font-serif text-[#1A1A1A] mb-2">15+</div>
+                <div className="text-4xl font-serif text-[#F5F5F5] mb-2">15+</div>
                 <div className="text-xs tracking-widest text-gray-500 uppercase">Years Legacy</div>
               </div>
               <div>
-                <div className="text-4xl font-serif text-[#1A1A1A] mb-2">500+</div>
+                <div className="text-4xl font-serif text-[#F5F5F5] mb-2">500+</div>
                 <div className="text-xs tracking-widest text-gray-500 uppercase">Global Masterpieces</div>
               </div>
             </div>
@@ -463,14 +469,14 @@ export default function App() {
       </section>
 
       {/* Services Hub */}
-      <section id="services" className="py-24 bg-white border-y border-gray-200">
+      <section id="services" className="py-24 bg-[#0F0F0F] border-y border-gray-800">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20">
             <div>
               <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">Our Expertise</span>
-              <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A]">End-to-End <br/>Execution.</h2>
+              <h2 className="font-serif text-4xl md:text-5xl text-[#F5F5F5]">End-to-End <br/>Execution.</h2>
             </div>
-            <p className="text-gray-600 font-light max-w-md text-sm mt-4 md:mt-0">
+            <p className="text-gray-400 font-light max-w-md text-sm mt-4 md:mt-0">
               From initial structural coordination to bespoke furniture manufacturing and smart home automation.
             </p>
           </div>
@@ -483,7 +489,7 @@ export default function App() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="group p-10 bg-[#FDFBF7] border border-gray-200 hover:border-[#C9A76A] transition-colors duration-500 relative overflow-hidden shadow-sm"
+                className="group p-10 bg-[#FDFBF7] border border-gray-800 hover:border-[#C9A76A] transition-colors duration-500 relative overflow-hidden shadow-sm"
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
               >
                 <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-500">
@@ -492,8 +498,8 @@ export default function App() {
                 <div className="text-[#C9A76A] font-serif text-2xl mb-4 opacity-60 group-hover:opacity-100 transition-opacity">
                   0{index + 1}
                 </div>
-                <h3 className="font-serif text-2xl mb-4 text-[#1A1A1A]">{service.title}</h3>
-                <p className="text-gray-600 font-light text-sm leading-relaxed mb-8">
+                <h3 className="font-serif text-2xl mb-4 text-[#F5F5F5]">{service.title}</h3>
+                <p className="text-gray-400 font-light text-sm leading-relaxed mb-8">
                   {service.desc}
                 </p>
                 <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9A76A] group-hover:w-full transition-all duration-700 ease-out"></div>
@@ -508,7 +514,7 @@ export default function App() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16">
           <div>
             <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">Portfolio</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A]">Curated Masterpieces</h2>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#F5F5F5]">Curated Masterpieces</h2>
           </div>
 
           {/* Category Filter */}
@@ -517,7 +523,7 @@ export default function App() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab.toLowerCase())}
-                className={`pb-1 transition-colors ${activeTab === tab.toLowerCase() ? 'text-[#C9A76A] border-b border-[#C9A76A]' : 'text-gray-500 hover:text-[#1A1A1A]'}`}
+                className={`pb-1 transition-colors ${activeTab === tab.toLowerCase() ? 'text-[#C9A76A] border-b border-[#C9A76A]' : 'text-gray-500 hover:text-[#F5F5F5]'}`}
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
               >
                 {tab}
@@ -541,16 +547,16 @@ export default function App() {
                   alt={project.title}
                   className="project-img w-full h-[55vh] object-cover bg-transparent transition-transform duration-1000 ease-out"
                 />
-                <div className="absolute bottom-6 right-6 z-20 bg-white/90 backdrop-blur-md px-4 py-2 text-xs uppercase tracking-widest text-[#1A1A1A] border border-gray-200 shadow">
+                <div className="absolute bottom-6 right-6 z-20 bg-[#0F0F0F]/90 backdrop-blur-md px-4 py-2 text-xs uppercase tracking-widest text-[#F5F5F5] border border-gray-800 shadow">
                   Explore Case Study
                 </div>
               </div>
               <div className="flex justify-between items-center">
                 <div>
-                  <h3 className="font-serif text-2xl mb-1 text-[#1A1A1A]">{project.title}</h3>
+                  <h3 className="font-serif text-2xl mb-1 text-[#F5F5F5]">{project.title}</h3>
                   <p className="text-xs tracking-widest text-gray-500 uppercase">{project.category} &bull; {project.location}</p>
                 </div>
-                <div className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center group-hover:border-[#1A1A1A] group-hover:bg-[#1A1A1A] group-hover:text-white transition-colors">
+                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-[#1A1A1A] group-hover:bg-[#1A1A1A] group-hover:text-white transition-colors">
                   <IconArrowRight size={18} className="-rotate-45" />
                 </div>
               </div>
@@ -560,12 +566,12 @@ export default function App() {
       </section>
 
       {/* Experience / Interactive Showroom Banner */}
-      <section id="experience" className="py-24 bg-white border-t border-gray-200 relative overflow-hidden">
+      <section id="experience" className="py-24 bg-[#0F0F0F] border-t border-gray-800 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">Digital Showroom</span>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6 text-[#1A1A1A]">Experience Architecture Before It's Built.</h2>
-            <p className="text-gray-600 font-light mb-8 leading-relaxed">
+            <h2 className="font-serif text-4xl md:text-5xl mb-6 text-[#F5F5F5]">Experience Architecture Before It's Built.</h2>
+            <p className="text-gray-400 font-light mb-8 leading-relaxed">
               Step inside virtual 3D walkthroughs, experiment with high-end Italian marbles and custom architectural wood veneers in real-time, and collaborate directly with our principal designers.
             </p>
             <button
@@ -583,8 +589,79 @@ export default function App() {
       </section>
 
       </main>
+      {/* Project Cost Estimator */}
+      <section className="py-24 bg-[#0F0F0F] border-t border-gray-800">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs font-semibold block mb-3">Cost Estimator</span>
+            <h2 className="font-serif text-3xl md:text-5xl text-[#F5F5F5]">Calculate Your Interior Cost</h2>
+          </div>
+
+          <div className="bg-[#1A1A1A] p-8 md:p-12 rounded-sm border border-gray-800 shadow-2xl">
+            <div className="space-y-8">
+              {/* Square Footage Slider */}
+              <div>
+                <div className="flex justify-between items-end mb-4">
+                  <label className="text-gray-300 font-medium uppercase tracking-wider text-sm">Area (Sq. Ft.)</label>
+                  <span className="text-[#C9A76A] font-serif text-2xl">{sqFt.toLocaleString()} sq.ft</span>
+                </div>
+                <input
+                  type="range"
+                  min="500"
+                  max="10000"
+                  step="100"
+                  value={sqFt}
+                  onChange={(e) => setSqFt(Number(e.target.value))}
+                  className="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#C9A76A]"
+                />
+                <div className="flex justify-between text-xs text-gray-500 mt-2">
+                  <span>500 sq.ft</span>
+                  <span>10,000+ sq.ft</span>
+                </div>
+              </div>
+
+              {/* Rate per Sq Ft Slider */}
+              <div>
+                <div className="flex justify-between items-end mb-4">
+                  <label className="text-gray-300 font-medium uppercase tracking-wider text-sm">Design & Material Quality (Rate per Sq. Ft.)</label>
+                  <span className="text-[#C9A76A] font-serif text-2xl">${ratePerSqFt.toLocaleString()}</span>
+                </div>
+                <input
+                  type="range"
+                  min="2499"
+                  max="99999"
+                  step="100"
+                  value={ratePerSqFt}
+                  onChange={(e) => setRatePerSqFt(Number(e.target.value))}
+                  className="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#C9A76A]"
+                />
+                <div className="flex justify-between text-xs text-gray-500 mt-2">
+                  <span>₹2,499 (Essential)</span>
+                  <span>₹99,999 (Ultra Luxury)</span>
+                </div>
+              </div>
+
+              {/* Total Estimated Cost */}
+              <div className="pt-8 mt-8 border-t border-gray-800 text-center">
+                <span className="text-gray-400 uppercase tracking-widest text-xs block mb-2">Estimated Total Cost</span>
+                <div className="font-serif text-5xl md:text-6xl text-[#F5F5F5]">
+                  ${(sqFt * ratePerSqFt).toLocaleString()}
+                </div>
+                <p className="text-gray-500 text-sm mt-4 italic">*This is a rough estimate. Final cost depends on specific material selection and scope of work.</p>
+                <button
+                  onClick={() => setConsultationOpen(true)}
+                  className="mt-8 px-8 py-4 bg-[#C9A76A] text-[#0F0F0F] font-medium tracking-wide uppercase text-sm hover:bg-[#b5955b] transition-colors"
+                >
+                  Get a Detailed Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
+
       <footer className="bg-[#1A1A1A] text-white pt-24 pb-12 px-6 md:px-12 border-t border-gray-800" role="contentinfo">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2">
@@ -627,34 +704,34 @@ export default function App() {
       {/* Consultation Modal */}
       {consultationOpen && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-white border border-gray-200 max-w-lg w-full p-8 md:p-10 relative shadow-2xl">
+          <div className="bg-[#0F0F0F] border border-gray-800 max-w-lg w-full p-8 md:p-10 relative shadow-2xl">
             <button onClick={() => setConsultationOpen(false)} className="absolute top-6 right-6 text-gray-400 hover:text-black">
               <IconX size={24} />
             </button>
             <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs block mb-2 font-semibold">Private Booking</span>
-            <h3 className="font-serif text-3xl mb-6 text-[#1A1A1A]">Book Consultation</h3>
+            <h3 className="font-serif text-3xl mb-6 text-[#F5F5F5]">Book Consultation</h3>
 
             <form onSubmit={(e) => { e.preventDefault(); alert("Consultation request received. Our principal architect will contact you within 2 hours."); setConsultationOpen(false); }} className="space-y-4">
               <div>
-                <label className="block text-xs uppercase tracking-wider text-gray-600 mb-2">Full Name</label>
-                <input required type="text" className="w-full bg-[#FDFBF7] border border-gray-300 p-3 text-[#1A1A1A] text-sm focus:border-[#C9A76A] outline-none" placeholder="e.g., Alexander Wright" />
+                <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Full Name</label>
+                <input required type="text" className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="e.g., Alexander Wright" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-gray-600 mb-2">Email</label>
-                  <input required type="email" className="w-full bg-[#FDFBF7] border border-gray-300 p-3 text-[#1A1A1A] text-sm focus:border-[#C9A76A] outline-none" placeholder="alexander@domain.com" />
+                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Email</label>
+                  <input required type="email" className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="alexander@domain.com" />
                 </div>
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-gray-600 mb-2">Phone</label>
-                  <input required type="tel" className="w-full bg-[#FDFBF7] border border-gray-300 p-3 text-[#1A1A1A] text-sm focus:border-[#C9A76A] outline-none" placeholder="+1 (555) 019-2834" />
+                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Phone</label>
+                  <input required type="tel" className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="+1 (555) 019-2834" />
                 </div>
               </div>
               <div>
-                <label className="block text-xs uppercase tracking-wider text-gray-600 mb-2">Property Type & Budget</label>
-                <select className="w-full bg-[#FDFBF7] border border-gray-300 p-3 text-[#1A1A1A] text-sm focus:border-[#C9A76A] outline-none">
-                  <option>Luxury Villa ($2M - $5M+)</option>
-                  <option>Penthouse / Apartment ($1M - $3M)</option>
-                  <option>Commercial Headquarters ($5M+)</option>
+                <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Property Type & Budget</label>
+                <select className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none">
+                  <option>Luxury Villa (₹2M - ₹5M+)</option>
+                  <option>Penthouse / Apartment (₹1M - ₹3M)</option>
+                  <option>Commercial Headquarters (₹5M+)</option>
                   <option>Boutique Retail / Showroom</option>
                 </select>
               </div>
@@ -669,28 +746,28 @@ export default function App() {
       {/* Project Case Study Modal */}
       {activeProject && (
         <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-md flex items-center justify-center p-4 md:p-10 overflow-y-auto">
-          <div className="bg-white border border-gray-200 max-w-4xl w-full p-8 md:p-12 relative my-auto shadow-2xl">
+          <div className="bg-[#0F0F0F] border border-gray-800 max-w-4xl w-full p-8 md:p-12 relative my-auto shadow-2xl">
             <button onClick={() => setActiveProject(null)} className="absolute top-6 right-6 text-gray-400 hover:text-black">
               <IconX size={26} />
             </button>
 
             <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs block mb-2 font-semibold">{activeProject.category} &bull; {activeProject.location}</span>
-            <h2 className="font-serif text-3xl md:text-5xl mb-6 text-[#1A1A1A]">{activeProject.title}</h2>
+            <h2 className="font-serif text-3xl md:text-5xl mb-6 text-[#F5F5F5]">{activeProject.title}</h2>
 
             <img src={activeProject.image} alt={activeProject.title} className="w-full h-[40vh] object-cover bg-transparent mb-8 shadow-sm filter brightness-[1.02]" />
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-gray-200 py-6 mb-8 text-xs uppercase tracking-wider">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-gray-800 py-6 mb-8 text-xs uppercase tracking-wider">
               <div>
                 <span className="text-gray-500 block mb-1">Total Area</span>
-                <span className="text-[#1A1A1A] font-semibold text-sm">{activeProject.area}</span>
+                <span className="text-[#F5F5F5] font-semibold text-sm">{activeProject.area}</span>
               </div>
               <div>
                 <span className="text-gray-500 block mb-1">Budget Range</span>
-                <span className="text-[#1A1A1A] font-semibold text-sm">{activeProject.budget}</span>
+                <span className="text-[#F5F5F5] font-semibold text-sm">{activeProject.budget}</span>
               </div>
               <div>
                 <span className="text-gray-500 block mb-1">Timeline</span>
-                <span className="text-[#1A1A1A] font-semibold text-sm">{activeProject.timeline}</span>
+                <span className="text-[#F5F5F5] font-semibold text-sm">{activeProject.timeline}</span>
               </div>
               <div>
                 <span className="text-gray-500 block mb-1">Status</span>
@@ -698,7 +775,7 @@ export default function App() {
               </div>
             </div>
 
-            <p className="text-gray-700 font-light leading-relaxed text-base mb-8">
+            <p className="text-gray-300 font-light leading-relaxed text-base mb-8">
               {activeProject.desc} Our approach on this project centered on seamless indoor-outdoor thresholds, custom lighting choreography, and rigorous spatial optimization tailored to the client's private lifestyle requirements.
             </p>
 
