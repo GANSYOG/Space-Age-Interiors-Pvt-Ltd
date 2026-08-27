@@ -35,7 +35,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('all');
   const [selectedRoom, setSelectedRoom] = useState<string>('living');
   const [sqFt, setSqFt] = useState(1000);
-  const [ratePerSqFt, setRatePerSqFt] = useState(2499);
+  const [ratePerSqFt, setRatePerSqFt] = useState(999);
 
 
   // Scroll effect for Navbar
@@ -628,7 +628,7 @@ export default function App() {
                 </div>
                 <input
                   type="range"
-                  min="2499"
+                  min="999"
                   max="99999"
                   step="100"
                   value={ratePerSqFt}
@@ -636,7 +636,7 @@ export default function App() {
                   className="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#C9A76A]"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-2">
-                  <span>₹2,499 (Essential)</span>
+                  <span>₹999 (Essential)</span>
                   <span>₹99,999 (Ultra Luxury)</span>
                 </div>
               </div>
