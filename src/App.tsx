@@ -645,7 +645,7 @@ export default function App() {
               <div className="pt-8 mt-8 border-t border-gray-800 text-center">
                 <span className="text-gray-400 uppercase tracking-widest text-xs block mb-2">Estimated Total Cost</span>
                 <div className="font-serif text-5xl md:text-6xl text-[#F5F5F5]">
-                  ${(sqFt * ratePerSqFt).toLocaleString('en-IN')}
+                  ₹{(sqFt * ratePerSqFt).toLocaleString('en-IN')}
                 </div>
                 <p className="text-gray-500 text-sm mt-4 italic">*This is a rough estimate. Final cost depends on specific material selection and scope of work.</p>
                 <button
