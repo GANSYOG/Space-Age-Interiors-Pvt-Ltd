@@ -144,7 +144,7 @@ export default function App() {
     : projects.filter(p => p.category.toLowerCase() === activeTab.toLowerCase());
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] text-[#F5F5F5] selection:bg-[#C9A76A] selection:text-white">
+    <div className="min-h-screen bg-[#0F0F0F] text-[#F5F5F5] selection:bg-[#C9A76A] selection:text-white">
 
       {/* AEO & SEO Structured Data */}
       <script
@@ -192,7 +192,7 @@ export default function App() {
         }
 
         .glass-nav {
-          background: rgba(253, 251, 247, 0.95);
+          background: rgba(15, 15, 15, 0.95);
           backdrop-filter: blur(20px);
           border-bottom: 1px solid rgba(0,0,0,0.06);
         }
@@ -266,16 +266,16 @@ export default function App() {
 
               {servicesDropdownOpen && (
                 <div className="absolute top-full left-0 w-64 bg-[#0F0F0F] border border-gray-800 shadow-2xl py-3 mt-1 flex flex-col z-50">
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
                     Residential Interiors
                   </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
                     Commercial Spaces
                   </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
                     Turnkey Architecture
                   </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#FDFBF7] hover:text-[#C9A76A] transition-colors">
+                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
                     Bespoke Furniture
                   </a>
                 </div>
@@ -317,7 +317,7 @@ export default function App() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#FDFBF7] z-40 flex flex-col justify-center items-center space-y-6 h-screen">
+        <div className="fixed inset-0 bg-[#0F0F0F] z-40 flex flex-col justify-center items-center space-y-6 h-screen">
           <a href="#studio" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Studio</a>
           <a href="#services" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
           <a href="#portfolio" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Portfolio</a>
@@ -377,7 +377,7 @@ export default function App() {
       </section>
 
       {/* Interactive Modern House Interior Showcase (Rooms Explorer) */}
-      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-800 bg-[#FDFBF7]">
+      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-800 bg-[#0F0F0F]">
         <div className="text-center mb-16">
           <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-3 font-semibold">Spatial Exploration</span>
           <h2 className="font-serif text-3xl md:text-5xl mb-4 leading-tight text-[#F5F5F5]">Modern House Interiors</h2>
@@ -489,7 +489,7 @@ export default function App() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="group p-10 bg-[#FDFBF7] border border-gray-800 hover:border-[#C9A76A] transition-colors duration-500 relative overflow-hidden shadow-sm"
+                className="group p-10 bg-[#0F0F0F] border border-gray-800 hover:border-[#C9A76A] transition-colors duration-500 relative overflow-hidden shadow-sm"
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
               >
                 <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-500">
@@ -714,21 +714,21 @@ export default function App() {
             <form onSubmit={(e) => { e.preventDefault(); alert("Consultation request received. Our principal architect will contact you within 2 hours."); setConsultationOpen(false); }} className="space-y-4">
               <div>
                 <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Full Name</label>
-                <input required type="text" className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="e.g., Alexander Wright" />
+                <input required type="text" className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="e.g., Alexander Wright" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Email</label>
-                  <input required type="email" className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="alexander@domain.com" />
+                  <input required type="email" className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="alexander@domain.com" />
                 </div>
                 <div>
                   <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Phone</label>
-                  <input required type="tel" className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="+1 (555) 019-2834" />
+                  <input required type="tel" className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="+1 (555) 019-2834" />
                 </div>
               </div>
               <div>
                 <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Property Type & Budget</label>
-                <select className="w-full bg-[#FDFBF7] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none">
+                <select className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none">
                   <option>Luxury Villa (₹2M - ₹5M+)</option>
                   <option>Penthouse / Apartment (₹1M - ₹3M)</option>
                   <option>Commercial Headquarters (₹5M+)</option>
