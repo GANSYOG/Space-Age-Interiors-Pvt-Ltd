@@ -608,7 +608,7 @@ export default function App() {
                 <input
                   type="range"
                   min="500"
-                  max="10000"
+                  max="100000"
                   step="100"
                   value={sqFt}
                   onChange={(e) => setSqFt(Number(e.target.value))}
@@ -616,7 +616,7 @@ export default function App() {
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-2">
                   <span>500 sq.ft</span>
-                  <span>10,000+ sq.ft</span>
+                  <span>1,00,000+ sq.ft</span>
                 </div>
               </div>
 
@@ -624,7 +624,7 @@ export default function App() {
               <div>
                 <div className="flex justify-between items-end mb-4">
                   <label className="text-gray-300 font-medium uppercase tracking-wider text-sm">Design & Material Quality (Rate per Sq. Ft.)</label>
-                  <span className="text-[#C9A76A] font-serif text-2xl">${ratePerSqFt.toLocaleString('en-IN')}</span>
+                  <span className="text-[#C9A76A] font-serif text-2xl">₹{ratePerSqFt.toLocaleString('en-IN')}</span>
                 </div>
                 <input
                   type="range"
