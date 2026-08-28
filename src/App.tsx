@@ -249,7 +249,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-3 items-center">
 
           {/* Column 1: Left Menu */}
-          <div className="hidden md:flex items-center space-x-10 text-xs tracking-[0.2em] uppercase text-gray-300 font-medium">
+          <div className="hidden md:flex items-center space-x-10 text-xs tracking-[0.2em] uppercase text-gray-300 font-bold bg-black/40 px-4 py-2 rounded-lg">
             <a href="#studio" className="hover:text-[#C9A76A] transition-colors py-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               Studio
             </a>
@@ -290,7 +290,7 @@ export default function App() {
         </div>
 
           {/* Column 3: Right Menu & CTA */}
-          <div className="hidden md:flex items-center justify-end space-x-8 text-xs tracking-[0.2em] uppercase text-gray-300 font-medium">
+          <div className="hidden md:flex items-center justify-end space-x-8 text-xs tracking-[0.2em] uppercase text-gray-300 font-bold bg-black/40 px-4 py-2 rounded-lg">
             <a href="#portfolio" className="hover:text-[#C9A76A] transition-colors py-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               Portfolio
             </a>
@@ -602,7 +602,7 @@ export default function App() {
               {/* Square Footage Slider */}
               <div>
                 <div className="flex justify-between items-end mb-4">
-                  <label className="text-gray-300 font-medium uppercase tracking-wider text-sm">Area (Sq. Ft.)</label>
+                  <label className="text-gray-300 font-bold bg-black/40 px-4 py-2 rounded-lg uppercase tracking-wider text-sm">Area (Sq. Ft.)</label>
                   <span className="text-[#C9A76A] font-serif text-2xl">{sqFt.toLocaleString('en-IN')} sq.ft</span>
                 </div>
                 <input
@@ -623,7 +623,7 @@ export default function App() {
               {/* Rate per Sq Ft Slider */}
               <div>
                 <div className="flex justify-between items-end mb-4">
-                  <label className="text-gray-300 font-medium uppercase tracking-wider text-sm">Design & Material Quality (Rate per Sq. Ft.)</label>
+                  <label className="text-gray-300 font-bold bg-black/40 px-4 py-2 rounded-lg uppercase tracking-wider text-sm">Design & Material Quality (Rate per Sq. Ft.)</label>
                   <span className="text-[#C9A76A] font-serif text-2xl">₹{ratePerSqFt.toLocaleString('en-IN')}</span>
                 </div>
                 <input
@@ -666,24 +666,24 @@ export default function App() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2">
             <img src="./logo  2.jpeg" alt="Space Age Interiors" className="h-16 md:h-20 w-auto invert brightness-125 mb-6" />
-            <p className="text-gray-400 font-light text-sm max-w-sm leading-relaxed mb-8">
+            <p className="text-gray-800 font-light text-sm max-w-sm leading-relaxed mb-8">
               Luxury. Innovation. Precision. Crafting timeless architectural environments for modern living.
             </p>
           </div>
 
           <div>
-            <h4 className="text-white tracking-widest uppercase text-xs font-semibold mb-6">Navigation</h4>
-            <ul className="space-y-4 text-xs tracking-wider text-gray-400 uppercase font-light">
-              <li><a href="#studio" className="hover:text-white transition-colors">Studio</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#experience" className="hover:text-white transition-colors">Experience</a></li>
+            <h4 className="text-black tracking-widest uppercase text-xs font-semibold mb-6">Navigation</h4>
+            <ul className="space-y-4 text-xs tracking-wider text-gray-800 uppercase font-light">
+              <li><a href="#studio" className="hover:text-black transition-colors">Studio</a></li>
+              <li><a href="#services" className="hover:text-black transition-colors">Services</a></li>
+              <li><a href="#portfolio" className="hover:text-black transition-colors">Portfolio</a></li>
+              <li><a href="#experience" className="hover:text-black transition-colors">Experience</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white tracking-widest uppercase text-xs font-semibold mb-6">Contact</h4>
-            <ul className="space-y-4 text-xs tracking-wider text-gray-400 font-light">
+            <h4 className="text-black tracking-widest uppercase text-xs font-semibold mb-6">Contact</h4>
+            <ul className="space-y-4 text-xs tracking-wider text-gray-800 font-light">
               <li>R21, Malad (East), Mumbai - 400097.</li>
               <li>spaceageinterior22@gmail.com</li>
               <li>+91-8097499616</li>
@@ -692,7 +692,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <div className="max-w-7xl mx-auto border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-700">
           <p>&copy; {new Date().getFullYear()} Space Age Interiors. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-gray-300">Privacy Policy</a>
