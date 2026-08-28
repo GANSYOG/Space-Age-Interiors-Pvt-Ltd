@@ -299,7 +299,7 @@ export default function App() {
             </a>
             <button
               onClick={() => setConsultationOpen(true)}
-              className="bg-transparent border border-[#C9A76A] text-[#F5F5F5] px-5 py-2 text-[11px] tracking-[0.2em] uppercase hover:bg-[#C9A76A] hover:text-white transition-all duration-500 font-medium"
+              className="bg-transparent border border-[#C9A76A] text-[#F5F5F5] px-5 py-2 text-[11px] tracking-[0.2em] uppercase hover:bg-[#E3C388] hover:text-[#0F0F0F] transition-all duration-500 font-medium"
               onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
             >
               Consult
@@ -358,7 +358,7 @@ export default function App() {
           <div className="flex flex-col sm:flex-row gap-5">
             <a
               href="#portfolio"
-              className="bg-[#1A1A1A] text-white px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:bg-[#C9A76A] transition-colors duration-500 shadow-xl"
+              className="bg-[#C9A76A] text-[#0F0F0F] px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:bg-[#E3C388] transition-colors duration-500 shadow-xl"
               onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
             >
               Explore Masterpieces
@@ -366,7 +366,7 @@ export default function App() {
             </a>
             <button
               onClick={() => setConsultationOpen(true)}
-              className="bg-transparent border border-gray-400 text-[#F5F5F5] px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:border-[#1A1A1A] transition-colors duration-500"
+              className="bg-transparent border border-gray-400 text-gray-300 px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:border-[#C9A76A] hover:text-[#C9A76A] transition-colors duration-500"
               onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
             >
               <IconPlay size={14} className="fill-current text-[#C9A76A]" />
@@ -396,7 +396,7 @@ export default function App() {
               <button
                 key={room.id}
                 onClick={() => setSelectedRoom(room.id)}
-                className={`px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300 border ${selectedRoom === room.id ? 'bg-[#1A1A1A] text-white border-[#1A1A1A] font-semibold' : 'bg-[#0F0F0F] text-gray-300 border-gray-800 hover:border-[#C9A76A]'}`}
+                className={`px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300 border ${selectedRoom === room.id ? 'bg-[#C9A76A] text-[#0F0F0F] border-[#1A1A1A] font-semibold' : 'bg-[#0F0F0F] text-gray-300 border-gray-800 hover:border-[#C9A76A]'}`}
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
               >
                 {room.label}
@@ -423,7 +423,7 @@ export default function App() {
               </p>
               <button
                 onClick={() => setConsultationOpen(true)}
-                className="self-start border border-[#1A1A1A] text-[#F5F5F5] px-6 py-3 uppercase tracking-widest text-xs font-medium hover:bg-[#1A1A1A] hover:text-white transition-colors"
+                className="self-start border border-gray-600 text-gray-300 px-6 py-3 uppercase tracking-widest text-xs font-medium hover:border-[#C9A76A] hover:text-[#C9A76A] transition-colors"
               >
                 Inquire For This Space
               </button>
@@ -576,7 +576,7 @@ export default function App() {
             </p>
             <button
               onClick={() => setConsultationOpen(true)}
-              className="bg-[#1A1A1A] text-white px-8 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-[#C9A76A] transition-colors"
+              className="bg-[#C9A76A] text-[#0F0F0F] px-8 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-[#E3C388] transition-colors"
             >
               Schedule Virtual Tour
             </button>
@@ -603,7 +603,7 @@ export default function App() {
               <div>
                 <div className="flex justify-between items-end mb-4">
                   <label className="text-gray-300 font-medium uppercase tracking-wider text-sm">Area (Sq. Ft.)</label>
-                  <span className="text-[#C9A76A] font-serif text-2xl">{sqFt.toLocaleString()} sq.ft</span>
+                  <span className="text-[#C9A76A] font-serif text-2xl">{sqFt.toLocaleString('en-IN')} sq.ft</span>
                 </div>
                 <input
                   type="range"
@@ -624,12 +624,12 @@ export default function App() {
               <div>
                 <div className="flex justify-between items-end mb-4">
                   <label className="text-gray-300 font-medium uppercase tracking-wider text-sm">Design & Material Quality (Rate per Sq. Ft.)</label>
-                  <span className="text-[#C9A76A] font-serif text-2xl">${ratePerSqFt.toLocaleString()}</span>
+                  <span className="text-[#C9A76A] font-serif text-2xl">${ratePerSqFt.toLocaleString('en-IN')}</span>
                 </div>
                 <input
                   type="range"
                   min="999"
-                  max="99999"
+                  max="100000"
                   step="100"
                   value={ratePerSqFt}
                   onChange={(e) => setRatePerSqFt(Number(e.target.value))}
@@ -637,7 +637,7 @@ export default function App() {
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-2">
                   <span>₹999 (Essential)</span>
-                  <span>₹99,999 (Ultra Luxury)</span>
+                  <span>₹1,00,000 (Ultra Luxury)</span>
                 </div>
               </div>
 
@@ -645,7 +645,7 @@ export default function App() {
               <div className="pt-8 mt-8 border-t border-gray-800 text-center">
                 <span className="text-gray-400 uppercase tracking-widest text-xs block mb-2">Estimated Total Cost</span>
                 <div className="font-serif text-5xl md:text-6xl text-[#F5F5F5]">
-                  ${(sqFt * ratePerSqFt).toLocaleString()}
+                  ${(sqFt * ratePerSqFt).toLocaleString('en-IN')}
                 </div>
                 <p className="text-gray-500 text-sm mt-4 italic">*This is a rough estimate. Final cost depends on specific material selection and scope of work.</p>
                 <button
@@ -662,7 +662,7 @@ export default function App() {
 
       {/* Footer */}
 
-      <footer className="bg-[#1A1A1A] text-white pt-24 pb-12 px-6 md:px-12 border-t border-gray-800" role="contentinfo">
+      <footer className="bg-[#C9A76A] text-[#0F0F0F] pt-24 pb-12 px-6 md:px-12 border-t border-gray-800" role="contentinfo">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2">
             <img src="./logo  2.jpeg" alt="Space Age Interiors" className="h-16 md:h-20 w-auto invert brightness-125 mb-6" />
@@ -705,7 +705,7 @@ export default function App() {
       {consultationOpen && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4">
           <div className="bg-[#0F0F0F] border border-gray-800 max-w-lg w-full p-8 md:p-10 relative shadow-2xl">
-            <button onClick={() => setConsultationOpen(false)} className="absolute top-6 right-6 text-gray-400 hover:text-black">
+            <button onClick={() => setConsultationOpen(false)} className="absolute top-6 right-6 text-gray-400 hover:text-white">
               <IconX size={24} />
             </button>
             <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs block mb-2 font-semibold">Private Booking</span>
@@ -735,7 +735,7 @@ export default function App() {
                   <option>Boutique Retail / Showroom</option>
                 </select>
               </div>
-              <button type="submit" className="w-full bg-[#1A1A1A] text-white py-4 font-semibold uppercase tracking-widest text-xs hover:bg-[#C9A76A] transition-colors mt-4">
+              <button type="submit" className="w-full bg-[#C9A76A] text-[#0F0F0F] py-4 font-semibold uppercase tracking-widest text-xs hover:bg-[#E3C388] transition-colors mt-4">
                 Confirm Private Request
               </button>
             </form>
@@ -747,7 +747,7 @@ export default function App() {
       {activeProject && (
         <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-md flex items-center justify-center p-4 md:p-10 overflow-y-auto">
           <div className="bg-[#0F0F0F] border border-gray-800 max-w-4xl w-full p-8 md:p-12 relative my-auto shadow-2xl">
-            <button onClick={() => setActiveProject(null)} className="absolute top-6 right-6 text-gray-400 hover:text-black">
+            <button onClick={() => setActiveProject(null)} className="absolute top-6 right-6 text-gray-400 hover:text-white">
               <IconX size={26} />
             </button>
 
@@ -781,7 +781,7 @@ export default function App() {
 
             <button
               onClick={() => { setActiveProject(null); setConsultationOpen(true); }}
-              className="bg-[#1A1A1A] text-white px-8 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-[#C9A76A] transition-colors"
+              className="bg-[#C9A76A] text-[#0F0F0F] px-8 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-[#E3C388] transition-colors"
             >
               Inquire About Similar Design
             </button>
