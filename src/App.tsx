@@ -76,15 +76,34 @@ const SOCIALS = [
 ];
 
 // --- Invoice page (gradient-abstract-technology invoice reference) ---
+
 function InvoiceSection() {
-  const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
-  const items = [
-    { name: 'Modular Kitchen — Design & Installation', price: 185000, qty: 1 },
-    { name: 'False Ceiling & Cove Lighting', price: 96000, qty: 1 },
-    { name: 'Walk-In Wardrobe — Fluted Finish', price: 142000, qty: 1 },
-    { name: 'Italian Marble & Wall Cladding', price: 218000, qty: 1 },
-    { name: 'Smart Lighting & Home Automation', price: 74000, qty: 1 },
-  ];
+  const [date, setDate] = useState(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' }));
+  const [clientName, setClientName] = useState('Client Name');
+  const [clientLocation, setClientLocation] = useState('Mumbai, Maharashtra');
+  const [invoiceNumber, setInvoiceNumber] = useState('Invoice #001');
+
+  const [items, setItems] = useState([
+    { id: 1, name: 'Modular Kitchen — Design & Installation', price: 185000, qty: 1 },
+    { id: 2, name: 'False Ceiling & Cove Lighting', price: 96000, qty: 1 },
+    { id: 3, name: 'Walk-In Wardrobe — Fluted Finish', price: 142000, qty: 1 },
+    { id: 4, name: 'Italian Marble & Wall Cladding', price: 218000, qty: 1 },
+    { id: 5, name: 'Smart Lighting & Home Automation', price: 74000, qty: 1 },
+  ]);
+
+  const updateItem = (id: number, field: string, value: any) => {
+    setItems(items.map(item => item.id === id ? { ...item, [field]: value } : item));
+  };
+
+  const addItem = () => {
+    const newId = items.length > 0 ? Math.max(...items.map(i => i.id)) + 1 : 1;
+    setItems([...items, { id: newId, name: 'New Item', price: 0, qty: 1 }]);
+  };
+
+  const removeItem = (id: number) => {
+    setItems(items.filter(item => item.id !== id));
+  };
+
   const subtotal = items.reduce((s, i) => s + i.price * i.qty, 0);
   const tax = Math.round(subtotal * 0.18);
   const total = subtotal + tax;
@@ -93,17 +112,17 @@ function InvoiceSection() {
   return (
     <section className="relative py-24 px-4 md:px-8 grad-page overflow-hidden">
       <div className="max-w-3xl mx-auto">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-10 reveal">
+        <div className="flex flex-wrap items-end justify-between gap-6 mb-10 reveal in">
           <div>
             <span className="text-orange-400 tracking-[0.25em] uppercase text-xs font-bold block mb-3">Billing Desk</span>
             <h2 className="text-4xl md:text-5xl font-black">Client <span className="grad-text">Invoice</span></h2>
           </div>
-          <button onClick={() => window.print()} className="grad-btn text-white px-6 py-3 rounded-xl text-xs font-extrabold uppercase tracking-widest">
+          <button onClick={() => window.print()} className="grad-btn text-white px-6 py-3 rounded-xl text-xs font-extrabold uppercase tracking-widest print:hidden">
             Print Invoice
           </button>
         </div>
 
-        <div className="invoice-card relative p-7 md:p-12 reveal">
+        <div className="invoice-card relative p-7 md:p-12 reveal in">
           <div className="flex flex-wrap items-start justify-between gap-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl bg-white/15 border border-white/25 flex items-center justify-center text-white">
@@ -119,13 +138,16 @@ function InvoiceSection() {
 
           <div className="grid sm:grid-cols-2 gap-6 mt-10 text-xs md:text-sm">
             <div className="space-y-1">
-              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Invoice #001</p>
-              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Date: {today}</p>
+              <input type="text" value={invoiceNumber} onChange={(e) => setInvoiceNumber(e.target.value)} className="bg-transparent font-extrabold tracking-[0.18em] uppercase text-white outline-none border-b border-dashed border-white/30 focus:border-white w-full print:border-none" />
+              <div className="flex items-center text-white">
+                <span className="font-extrabold tracking-[0.18em] uppercase mr-2">Date:</span>
+                <input type="text" value={date} onChange={(e) => setDate(e.target.value)} className="bg-transparent font-extrabold tracking-[0.18em] uppercase text-white outline-none border-b border-dashed border-white/30 focus:border-white print:border-none" />
+              </div>
             </div>
             <div className="space-y-1 sm:text-right">
               <p className="font-extrabold tracking-[0.18em] uppercase text-white">Billing To:</p>
-              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Client Name</p>
-              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Mumbai, Maharashtra</p>
+              <input type="text" value={clientName} onChange={(e) => setClientName(e.target.value)} className="bg-transparent font-extrabold tracking-[0.18em] uppercase text-white outline-none border-b border-dashed border-white/30 focus:border-white w-full sm:text-right print:border-none" />
+              <input type="text" value={clientLocation} onChange={(e) => setClientLocation(e.target.value)} className="bg-transparent font-extrabold tracking-[0.18em] uppercase text-white outline-none border-b border-dashed border-white/30 focus:border-white w-full sm:text-right print:border-none" />
             </div>
           </div>
 
@@ -137,13 +159,24 @@ function InvoiceSection() {
               <div className="col-span-3 text-right">Total</div>
             </div>
             {items.map((item) => (
-              <div key={item.name} className="grid grid-cols-12 items-center bg-white text-[#2b0a54] px-4 md:px-6 py-3.5 text-[11px] md:text-sm border-b border-[#e4def5] last:border-0">
-                <div className="col-span-5 font-semibold pr-2 leading-snug">{item.name}</div>
-                <div className="col-span-3 text-right font-semibold">{inr(item.price)}</div>
-                <div className="col-span-1 text-center font-semibold">{item.qty}</div>
+              <div key={item.id} className="grid grid-cols-12 items-center bg-white text-[#2b0a54] px-4 md:px-6 py-3.5 text-[11px] md:text-sm border-b border-[#e4def5] last:border-0 group">
+                <div className="col-span-5 font-semibold pr-2 leading-snug flex items-center">
+                  <button onClick={() => removeItem(item.id)} className="text-red-500 mr-2 opacity-0 group-hover:opacity-100 transition-opacity print:hidden" aria-label="Remove item"><IconX size={14}/></button>
+                  <input type="text" value={item.name} onChange={(e) => updateItem(item.id, 'name', e.target.value)} className="bg-transparent w-full outline-none border-b border-transparent focus:border-[#2b0a54]/30 print:border-none" />
+                </div>
+                <div className="col-span-3 text-right font-semibold">
+                  <span className="mr-1">₹</span>
+                  <input type="number" value={item.price} onChange={(e) => updateItem(item.id, 'price', Number(e.target.value))} className="bg-transparent w-24 text-right outline-none border-b border-transparent focus:border-[#2b0a54]/30 print:border-none" />
+                </div>
+                <div className="col-span-1 text-center font-semibold">
+                  <input type="number" value={item.qty} onChange={(e) => updateItem(item.id, 'qty', Number(e.target.value))} className="bg-transparent w-10 text-center outline-none border-b border-transparent focus:border-[#2b0a54]/30 print:border-none" />
+                </div>
                 <div className="col-span-3 text-right font-extrabold">{inr(item.price * item.qty)}</div>
               </div>
             ))}
+            <div className="bg-white px-4 md:px-6 py-2 print:hidden border-t-2 border-[#2b0a54]">
+               <button onClick={addItem} className="text-[#ee4b1f] text-xs font-bold uppercase tracking-widest hover:text-[#d63a12] transition-colors flex items-center gap-1">+ Add Item</button>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mt-8 items-start">
@@ -162,7 +195,7 @@ function InvoiceSection() {
             </div>
           </div>
 
-          <div className="flex justify-end gap-3 mt-10">
+          <div className="flex justify-end gap-3 mt-10 print:hidden">
             {SOCIALS.map(({ Icon, label }) => (
               <a key={label} href="#" aria-label={label} className="w-10 h-10 rounded-full bg-white/12 border border-white/25 flex items-center justify-center text-white hover:bg-[#ee4b1f] hover:border-[#ee4b1f] transition-colors">
                 <Icon size={17} />
@@ -174,7 +207,6 @@ function InvoiceSection() {
     </section>
   );
 }
-
 export default function App() {
   const [page, setPage] = useState<'home' | 'invoice'>('home');
   const [isScrolled, setIsScrolled] = useState(false);
