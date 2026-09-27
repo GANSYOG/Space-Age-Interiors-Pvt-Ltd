@@ -16,20 +16,174 @@ const IconPlay = ({ size = 24, className = "" }) => (
 const IconChevronDown = ({ size = 16, className = "" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="m6 9 6 6 6-6"/></svg>
 );
+const IconHome = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+);
+const IconShield = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+);
+const IconLock = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+);
+const IconGlobe = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+);
+const IconCloudRain = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+);
+const IconThermometer = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></svg>
+);
+const IconMapPin = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+);
+const IconGear = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+);
+const IconMolecule = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" className={className}>
+    <g fill="currentColor">
+      <circle cx="6.5" cy="7" r="2.4" />
+      <circle cx="17.5" cy="8.5" r="2" />
+      <circle cx="9.5" cy="17" r="2" />
+      <circle cx="18" cy="16.5" r="1.6" />
+    </g>
+    <g stroke="currentColor" strokeWidth="1.3" strokeLinecap="round">
+      <line x1="8.6" y1="7.6" x2="15.6" y2="8.6" />
+      <line x1="7.9" y1="8.9" x2="8.8" y2="15" />
+      <line x1="11.3" y1="16.6" x2="16.4" y2="16.4" />
+    </g>
+  </svg>
+);
+const IconInstagram = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+);
+const IconTwitter = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+);
+const IconYoutube = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+);
+const IconFacebook = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+);
+
+const SOCIALS = [
+  { Icon: IconInstagram, label: "Instagram" },
+  { Icon: IconTwitter, label: "Twitter" },
+  { Icon: IconYoutube, label: "YouTube" },
+  { Icon: IconFacebook, label: "Facebook" },
+];
+
+// --- Invoice page (gradient-abstract-technology invoice reference) ---
+function InvoiceSection() {
+  const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
+  const items = [
+    { name: 'Modular Kitchen — Design & Installation', price: 185000, qty: 1 },
+    { name: 'False Ceiling & Cove Lighting', price: 96000, qty: 1 },
+    { name: 'Walk-In Wardrobe — Fluted Finish', price: 142000, qty: 1 },
+    { name: 'Italian Marble & Wall Cladding', price: 218000, qty: 1 },
+    { name: 'Smart Lighting & Home Automation', price: 74000, qty: 1 },
+  ];
+  const subtotal = items.reduce((s, i) => s + i.price * i.qty, 0);
+  const tax = Math.round(subtotal * 0.18);
+  const total = subtotal + tax;
+  const inr = (n: number) => '₹' + n.toLocaleString('en-IN');
+
+  return (
+    <section className="relative py-24 px-4 md:px-8 grad-page overflow-hidden">
+      <div className="max-w-3xl mx-auto">
+        <div className="flex flex-wrap items-end justify-between gap-6 mb-10 reveal">
+          <div>
+            <span className="text-orange-400 tracking-[0.25em] uppercase text-xs font-bold block mb-3">Billing Desk</span>
+            <h2 className="text-4xl md:text-5xl font-black">Client <span className="grad-text">Invoice</span></h2>
+          </div>
+          <button onClick={() => window.print()} className="grad-btn text-white px-6 py-3 rounded-xl text-xs font-extrabold uppercase tracking-widest">
+            Print Invoice
+          </button>
+        </div>
+
+        <div className="invoice-card relative p-7 md:p-12 reveal">
+          <div className="flex flex-wrap items-start justify-between gap-6">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-2xl bg-white/15 border border-white/25 flex items-center justify-center text-white">
+                <IconMolecule size={26} />
+              </div>
+              <div>
+                <p className="font-black tracking-[0.28em] text-sm text-white">SPACE AGE</p>
+                <p className="text-[10px] tracking-[0.34em] text-purple-200/80 uppercase">Interiors</p>
+              </div>
+            </div>
+            <h3 className="text-4xl md:text-5xl font-black tracking-[0.1em] text-white">INVOICE</h3>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6 mt-10 text-xs md:text-sm">
+            <div className="space-y-1">
+              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Invoice #001</p>
+              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Date: {today}</p>
+            </div>
+            <div className="space-y-1 sm:text-right">
+              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Billing To:</p>
+              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Client Name</p>
+              <p className="font-extrabold tracking-[0.18em] uppercase text-white">Mumbai, Maharashtra</p>
+            </div>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden mt-8">
+            <div className="grid grid-cols-12 bg-[#ee4b1f] text-white text-[10px] md:text-xs font-extrabold uppercase tracking-[0.18em] px-4 md:px-6 py-3">
+              <div className="col-span-5">Product</div>
+              <div className="col-span-3 text-right">Price</div>
+              <div className="col-span-1 text-center">Qty</div>
+              <div className="col-span-3 text-right">Total</div>
+            </div>
+            {items.map((item) => (
+              <div key={item.name} className="grid grid-cols-12 items-center bg-white text-[#2b0a54] px-4 md:px-6 py-3.5 text-[11px] md:text-sm border-b border-[#e4def5] last:border-0">
+                <div className="col-span-5 font-semibold pr-2 leading-snug">{item.name}</div>
+                <div className="col-span-3 text-right font-semibold">{inr(item.price)}</div>
+                <div className="col-span-1 text-center font-semibold">{item.qty}</div>
+                <div className="col-span-3 text-right font-extrabold">{inr(item.price * item.qty)}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mt-8 items-start">
+            <div className="text-xs md:text-sm leading-relaxed">
+              <p className="font-extrabold uppercase tracking-[0.18em] text-white mb-3">Payment Info:</p>
+              <p className="text-purple-200/90">Account Number — 5020 0044 8812</p>
+              <p className="text-purple-200/90">A/C Name: Space Age Interiors</p>
+              <p className="text-purple-200/90">Bank Details: HDFC Bank, Malad East, IFSC HDFC0001234</p>
+              <p className="font-extrabold mt-6 mb-2 text-white">Terms And Conditions:</p>
+              <p className="text-purple-200/75 text-xs leading-relaxed">50% advance to commence work, 40% on material procurement, 10% on final handover. 1-year workmanship warranty included.</p>
+            </div>
+            <div className="bg-[#ede9fe] rounded-2xl p-6 text-[#2b0a54]">
+              <div className="flex justify-between py-1.5 text-sm"><span className="font-semibold">Subtotal</span><span className="font-extrabold">{inr(subtotal)}</span></div>
+              <div className="flex justify-between py-1.5 text-sm"><span className="font-semibold">Tax (18% GST)</span><span className="font-extrabold">{inr(tax)}</span></div>
+              <div className="flex justify-between items-center py-2.5 mt-2 border-t-2 border-[#2b0a54]/15 text-base md:text-lg font-black uppercase tracking-[0.14em]"><span>Total Price</span><span>{inr(total)}</span></div>
+            </div>
+          </div>
+
+          <div className="flex justify-end gap-3 mt-10">
+            {SOCIALS.map(({ Icon, label }) => (
+              <a key={label} href="#" aria-label={label} className="w-10 h-10 rounded-full bg-white/12 border border-white/25 flex items-center justify-center text-white hover:bg-[#ee4b1f] hover:border-[#ee4b1f] transition-colors">
+                <Icon size={17} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function App() {
-  // @ts-ignore
-  const [isScrolled, setIsScrolled] = useState(false); // eslint-disable-line
+  const [page, setPage] = useState<'home' | 'invoice'>('home');
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  // @ts-ignore
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 }); // eslint-disable-line
-  // @ts-ignore
-  const [isHovering, setIsHovering] = useState(false); // eslint-disable-line
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
 
-  // Navigation Dropdown state
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
-  // Modals & Interactive Room Explorer state
   const [consultationOpen, setConsultationOpen] = useState(false);
   const [activeProject, setActiveProject] = useState<any>(null);
   const [activeTab, setActiveTab] = useState('all');
@@ -37,116 +191,75 @@ export default function App() {
   const [sqFt, setSqFt] = useState(1000);
   const [ratePerSqFt, setRatePerSqFt] = useState(999);
 
-
-  // Scroll effect for Navbar
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 40);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Custom Cursor Tracker
   useEffect(() => {
-    const updateCursorPosition = (e: any) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    };
+    const updateCursorPosition = (e: any) => setCursorPos({ x: e.clientX, y: e.clientY });
     window.addEventListener('mousemove', updateCursorPosition);
     return () => window.removeEventListener('mousemove', updateCursorPosition);
   }, []);
 
+  useEffect(() => {
+    if (!('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add('in')),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [page]);
+
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
 
-  const roomSpaces = {
-    living: {
-      title: "Smart Living Room",
-      subtitle: "Warm-toned living area with crystal chandelier, walnut TV unit with fluted paneling, beige L-shaped sofa, and ambient cove-lit false ceiling.",
-      image: "./Hall 2.jpeg"
-    },
-    bedroom: {
-      title: "Master Bedroom Suite",
-      subtitle: "Serene bedroom with wooden fluted headboard wall, warm LED strip accents, pendant bedside lamps, and golden cove ceiling illumination.",
-      image: "./BedRoom 1.jpeg"
-    },
-    kitchen: {
-      title: "Parallel Modular Kitchen",
-      subtitle: "Bright galley kitchen with cream cabinetry, pull-out organizers, integrated appliances, and warm recessed ceiling lighting.",
-      image: "./KItchen.jpeg"
-    },
-    bathroom: {
-      title: "Spa-Inspired Bathroom",
-      subtitle: "Luxurious bathroom with emerald green marble walls, brushed gold fixtures, backlit oval mirror, and floating vanity with under-glow lighting.",
-      image: "./BathRoom.jpeg"
-    },
-    entrance: {
-      title: "Designer Main Door",
-      subtitle: "Custom-designed entrance with geometric jali pattern door, fluted cladding side panels, backlit name plate, and welcoming planter niche.",
-      image: "./Main Entrance.jpeg"
-    },
-    mandir: {
-      title: "Sacred Mandir Alcove",
-      subtitle: "Handcrafted prayer space with ornate Mughal arch, backlit Om symbol, jali lattice crown, brass bell, and marble platform.",
-      image: "./Mandir.jpeg"
+  const goTo = (id: string) => {
+    if (page !== 'home') {
+      setPage('home');
+      setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 120);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
+  const roomSpaces = {
+    living: { title: "Smart Living Room", subtitle: "Warm-toned living area with crystal chandelier, walnut TV unit with fluted paneling, beige L-shaped sofa, and ambient cove-lit false ceiling.", image: "./Hall 2.jpeg" },
+    bedroom: { title: "Master Bedroom Suite", subtitle: "Serene bedroom with wooden fluted headboard wall, warm LED strip accents, pendant bedside lamps, and golden cove ceiling illumination.", image: "./BedRoom 1.jpeg" },
+    kitchen: { title: "Parallel Modular Kitchen", subtitle: "Bright galley kitchen with cream cabinetry, pull-out organizers, integrated appliances, and warm recessed ceiling lighting.", image: "./KItchen.jpeg" },
+    bathroom: { title: "Spa-Inspired Bathroom", subtitle: "Luxurious bathroom with emerald green marble walls, brushed gold fixtures, backlit oval mirror, and floating vanity with under-glow lighting.", image: "./BathRoom.jpeg" },
+    entrance: { title: "Designer Main Door", subtitle: "Custom-designed entrance with geometric jali pattern door, fluted cladding side panels, backlit name plate, and welcoming planter niche.", image: "./Main Entrance.jpeg" },
+    mandir: { title: "Sacred Mandir Alcove", subtitle: "Handcrafted prayer space with ornate Mughal arch, backlit Om symbol, jali lattice crown, brass bell, and marble platform.", image: "./Mandir.jpeg" }
+  };
+
   const projects = [
-    {
-      id: 1,
-      title: "Golden Living Room",
-      category: "Residential",
-      location: "Mumbai, Maharashtra",
-      area: "350 sq.ft",
-      budget: "₹18L - ₹25L",
-      timeline: "6 Weeks",
-      image: "./Hall 3.jpeg",
-      desc: "Contemporary living room with ring chandelier, fluted TV panel, ambient cove lighting, gold wall art accents, and beige sectional sofa arrangement."
-    },
-    {
-      id: 2,
-      title: "Walk-In Wardrobe Suite",
-      category: "Residential",
-      location: "Navi Mumbai",
-      area: "180 sq.ft",
-      budget: "₹8L - ₹12L",
-      timeline: "4 Weeks",
-      image: "./BedRoom 2.jpeg",
-      desc: "Master bedroom with illuminated glass-fronted wardrobe, LED shelf lighting, natural daylight from floor-to-ceiling curtains, and layered false ceiling."
-    },
-    {
-      id: 3,
-      title: "Olive Modular Kitchen",
-      category: "Residential",
-      location: "Thane, Maharashtra",
-      area: "120 sq.ft",
-      budget: "₹8L - ₹12L",
-      timeline: "5 Weeks",
-      image: "./KItchen 2.jpeg",
-      desc: "Parallel galley kitchen in warm olive-green base with oak upper cabinetry, integrated appliances, spice pull-outs, and designer ceiling cove lighting."
-    },
-    {
-      id: 4,
-      title: "Sage Green Bedroom",
-      category: "Residential",
-      location: "Pune, Maharashtra",
-      area: "200 sq.ft",
-      budget: "₹10L - ₹15L",
-      timeline: "4 Weeks",
-      image: "./BedRoom 3.jpeg",
-      desc: "Elegant bedroom featuring sage green channel-tufted headboard with walnut fluted flanks, gold-leaf wall art, and designer pendant lights."
-    }
+    { id: 1, title: "Golden Living Room", category: "Residential", location: "Mumbai, Maharashtra", area: "350 sq.ft", budget: "₹18L - ₹25L", timeline: "6 Weeks", image: "./Hall 3.jpeg", desc: "Contemporary living room with ring chandelier, fluted TV panel, ambient cove lighting, gold wall art accents, and beige sectional sofa arrangement." },
+    { id: 2, title: "Walk-In Wardrobe Suite", category: "Residential", location: "Navi Mumbai", area: "180 sq.ft", budget: "₹8L - ₹12L", timeline: "4 Weeks", image: "./BedRoom 2.jpeg", desc: "Master bedroom with illuminated glass-fronted wardrobe, LED shelf lighting, natural daylight from floor-to-ceiling curtains, and layered false ceiling." },
+    { id: 3, title: "Olive Modular Kitchen", category: "Residential", location: "Thane, Maharashtra", area: "120 sq.ft", budget: "₹8L - ₹12L", timeline: "5 Weeks", image: "./KItchen 2.jpeg", desc: "Parallel galley kitchen in warm olive-green base with oak upper cabinetry, integrated appliances, spice pull-outs, and designer ceiling cove lighting." },
+    { id: 4, title: "Sage Green Bedroom", category: "Residential", location: "Pune, Maharashtra", area: "200 sq.ft", budget: "₹10L - ₹15L", timeline: "4 Weeks", image: "./BedRoom 3.jpeg", desc: "Elegant bedroom featuring sage green channel-tufted headboard with walnut fluted flanks, gold-leaf wall art, and designer pendant lights." }
   ];
 
-  const filteredProjects = activeTab === 'all'
-    ? projects
-    : projects.filter(p => p.category.toLowerCase() === activeTab.toLowerCase());
+  const filteredProjects = activeTab === 'all' ? projects : projects.filter(p => p.category.toLowerCase() === activeTab.toLowerCase());
+
+  const stats = [
+    { Icon: IconHome, value: "15+", label: "Years Legacy" },
+    { Icon: IconShield, value: "500+", label: "Projects Delivered" },
+    { Icon: IconGear, value: "98%", label: "Client Satisfaction" },
+  ];
+
+  const heroTiles = [
+    { Icon: IconHome, cls: "left-[5%] top-[27%] w-14 h-14 md:w-16 md:h-16", delay: "0s" },
+    { Icon: IconShield, cls: "right-[7%] top-[24%] w-14 h-14 md:w-16 md:h-16", delay: "0.8s" },
+    { Icon: IconLock, cls: "right-[34%] top-[48%] w-12 h-12 md:w-14 md:h-14", delay: "1.6s" },
+    { Icon: IconGlobe, cls: "left-[9%] bottom-[22%] w-12 h-12 md:w-14 md:h-14", delay: "2.2s" },
+    { Icon: IconCloudRain, cls: "right-[13%] bottom-[18%] w-14 h-14 md:w-16 md:h-16", delay: "1.1s" },
+    { Icon: IconThermometer, cls: "left-[36%] bottom-[14%] w-12 h-12 md:w-14 md:h-14", delay: "2.8s" },
+  ];
 
   return (
-    <div className="min-h-screen bg-[#0F0F0F] text-[#F5F5F5] selection:bg-[#C9A76A] selection:text-white">
-
-      {/* AEO & SEO Structured Data */}
+    <div className="min-h-screen bg-[#1e0a3c] text-[#f5f3ff] selection:bg-[#ee4b1f]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -160,155 +273,73 @@ export default function App() {
             "priceRange": "₹₹₹₹",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Luxury Studio Lane",
+              "streetAddress": "R21, Malad (East)",
               "addressLocality": "Mumbai",
               "addressRegion": "Maharashtra",
-              "postalCode": "400001",
+              "postalCode": "400097",
               "addressCountry": "IN"
             },
             "description": "Space Age Interiors crafts luminous, high-end residential spaces with warm gold accents, cove-lit false ceilings, Italian marble, and bespoke wooden fluting.",
-            "sameAs": [
-              "https://www.instagram.com/spaceageinteriors",
-              "https://www.linkedin.com/company/spaceageinteriors"
-            ]
+            "sameAs": ["https://www.instagram.com/spaceageinteriors", "https://www.linkedin.com/company/spaceageinteriors"]
           })
         }}
       />
 
-      {/* Global CSS Inject */}
       <style dangerouslySetInnerHTML={{__html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
-
-        body {
-          font-family: 'Inter', sans-serif;
-          background-color: #FDFBF7;
-          color: #1A1A1A;
-          cursor: none;
-          overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4, .font-serif {
-          font-family: 'Playfair Display', serif;
-        }
-
-        .glass-nav {
-          background: rgba(15, 15, 15, 0.95);
-          backdrop-filter: blur(20px);
-          border-bottom: 1px solid rgba(0,0,0,0.06);
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: #FDFBF7; }
-        ::-webkit-scrollbar-thumb { background: #D4D0C5; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #C9A76A; }
-
-        /* Custom Luxury Cursor */
-        .cursor-dot {
-          pointer-events: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 8px;
-          height: 8px;
-          background: #C9A76A;
-          border-radius: 50%;
-          transform: translate(-50%, -50%);
-          z-index: 99999;
-          transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s;
-        }
-        .cursor-dot.hovering {
-          width: 50px;
-          height: 50px;
-          background: rgba(201, 167, 106, 0.15);
-          border: 1px solid rgba(201, 167, 106, 0.5);
-          mix-blend-mode: difference;
-        }
-
-        .hero-zoom {
-          animation: slowZoom 25s ease-out infinite alternate;
-        }
-        @keyframes slowZoom {
-          from { transform: scale(1); }
-          to { transform: scale(1.08); }
-        }
-
-        .project-card:hover .project-img {
-          transform: scale(1.04);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
       `}} />
 
-      {/* Custom Cursor */}
-      <div
-        className={`cursor-dot hidden md:block ${isHovering ? 'hovering' : ''}`}
-        style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }}
-      />
+      <div className={`cursor-dot hidden md:block ${isHovering ? 'hovering' : ''}`} style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }} />
 
-      {/* Navigation Header using 3-Column Grid Layout to Prevent Overlap */}
-      <nav className="fixed w-full z-50 py-5 bg-[#000000] border-b border-gray-800 shadow-sm">
+      {/* Navigation */}
+      <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'glass-strong py-3 shadow-2xl' : 'bg-gradient-to-b from-[#1e0a3c]/90 to-transparent py-5'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-3 items-center">
-
-          {/* Column 1: Left Menu */}
-          <div className="hidden md:flex items-center space-x-10 text-xs tracking-[0.2em] uppercase text-gray-300 font-medium">
-            <a href="#studio" className="hover:text-[#C9A76A] transition-colors py-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              Studio
-            </a>
-
-            {/* Services Dropdown Menu */}
-            <div
-              className="relative py-2"
-              onMouseEnter={() => { setServicesDropdownOpen(true); handleMouseEnter(); }}
-              onMouseLeave={() => { setServicesDropdownOpen(false); handleMouseLeave(); }}
-            >
-              <a href="#services" className="hover:text-[#C9A76A] transition-colors flex items-center gap-1">
-                Services <IconChevronDown size={14} />
-              </a>
-
+          <div className="hidden md:flex items-center gap-8 text-xs font-bold tracking-[0.14em] uppercase text-purple-100/90">
+            <button onClick={() => goTo('studio')} className="hover:text-[#fb923c] transition-colors py-1">Studio</button>
+            <div className="relative py-2" onMouseEnter={() => { setServicesDropdownOpen(true); handleMouseEnter(); }} onMouseLeave={() => { setServicesDropdownOpen(false); handleMouseLeave(); }}>
+              <button onClick={() => goTo('services')} className="hover:text-[#fb923c] transition-colors flex items-center gap-1">Services <IconChevronDown size={14} /></button>
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 w-64 bg-[#0F0F0F] border border-gray-800 shadow-2xl py-3 mt-1 flex flex-col z-50">
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
-                    Residential Interiors
-                  </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
-                    Commercial Spaces
-                  </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
-                    Turnkey Architecture
-                  </a>
-                  <a href="#services" className="px-6 py-2.5 text-[11px] tracking-widest text-gray-300 hover:bg-[#0F0F0F] hover:text-[#C9A76A] transition-colors">
-                    Bespoke Furniture
-                  </a>
+                <div className="absolute top-full left-0 w-64 glass-strong rounded-2xl py-3 mt-1 flex flex-col z-50">
+                  {['Residential Interiors', 'Commercial Spaces', 'Turnkey Architecture', 'Bespoke Furniture'].map((s) => (
+                    <button key={s} onClick={() => goTo('services')} className="px-6 py-2.5 text-[11px] font-bold tracking-widest text-left text-purple-100/80 hover:bg-[#ee4b1f]/15 hover:text-[#fb923c] transition-colors">{s}</button>
+                  ))}
                 </div>
               )}
             </div>
           </div>
 
           <div className="text-center">
-          <a href="#" className="inline-block cursor-hover">
-            <img src="./logo  2.jpeg" alt="Space Age Interiors" className="h-12 md:h-16 w-auto mx-auto invert brightness-125" />
-          </a>
-        </div>
+            <button onClick={() => goTo('hero')} className="inline-flex items-center gap-3 group">
+              <span className="w-10 h-10 md:w-11 md:h-11 rounded-2xl bg-white/10 border border-white/20 backdrop-blur flex items-center justify-center text-white group-hover:bg-[#ee4b1f] group-hover:border-[#ee4b1f] transition-all">
+                <IconMolecule size={22} />
+              </span>
+              <span className="hidden sm:block text-left leading-tight">
+                <span className="block font-black tracking-[0.22em] text-sm text-white">SPACE AGE</span>
+                <span className="block text-[9px] tracking-[0.4em] text-purple-200/80 uppercase">Interiors</span>
+              </span>
+            </button>
+          </div>
 
-          {/* Column 3: Right Menu & CTA */}
-          <div className="hidden md:flex items-center justify-end space-x-8 text-xs tracking-[0.2em] uppercase text-gray-300 font-medium">
-            <a href="#portfolio" className="hover:text-[#C9A76A] transition-colors py-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              Portfolio
-            </a>
-            <a href="#experience" className="hover:text-[#C9A76A] transition-colors py-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              Experience
-            </a>
+          <div className="hidden md:flex items-center justify-end gap-7 text-xs font-bold tracking-[0.14em] uppercase text-purple-100/90">
+            <button onClick={() => goTo('portfolio')} className="hover:text-[#fb923c] transition-colors py-1">Portfolio</button>
+            <button onClick={() => goTo('experience')} className="hover:text-[#fb923c] transition-colors py-1">Experience</button>
+            <button
+              onClick={() => setPage('invoice')}
+              className={`px-4 py-1.5 rounded-full transition-all ${page === 'invoice' ? 'bg-[#ee4b1f] text-white shadow-lg shadow-[#ee4b1f]/40' : 'hover:text-[#fb923c]'}`}
+            >
+              Invoice
+            </button>
             <button
               onClick={() => setConsultationOpen(true)}
-              className="bg-transparent border border-[#C9A76A] text-[#F5F5F5] px-5 py-2 text-[11px] tracking-[0.2em] uppercase hover:bg-[#E3C388] hover:text-[#0F0F0F] transition-all duration-500 font-medium"
-              onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+              className="grad-btn text-white px-5 py-2.5 rounded-full text-[11px] font-extrabold uppercase tracking-widest"
             >
               Consult
             </button>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden col-span-2 text-right">
-            <button className="text-[#F5F5F5]" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          <div className="md:hidden col-span-2 flex items-center justify-between">
+            <button onClick={() => setPage('invoice')} className={`px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-widest ${page === 'invoice' ? 'bg-[#ee4b1f] text-white' : 'text-purple-100/90'}`}>Invoice</button>
+            <button className="text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? <IconX size={26} /> : <IconMenu size={26} />}
             </button>
           </div>
@@ -317,427 +348,407 @@ export default function App() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#0F0F0F] z-40 flex flex-col justify-center items-center space-y-6 h-screen">
-          <a href="#studio" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Studio</a>
-          <a href="#services" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
-          <a href="#portfolio" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Portfolio</a>
-          <a href="#experience" className="font-serif text-2xl text-[#F5F5F5] hover:text-[#C9A76A]" onClick={() => setIsMobileMenuOpen(false)}>Experience</a>
-          <button
-            onClick={() => { setIsMobileMenuOpen(false); setConsultationOpen(true); }}
-            className="bg-[#C9A76A] text-white px-8 py-3 text-xs uppercase tracking-widest font-medium mt-4"
-          >
-            Book Consultation
-          </button>
+        <div className="fixed inset-0 glass-strong z-40 flex flex-col justify-center items-center space-y-6 h-screen">
+          {[
+            { id: 'hero', label: 'Home' },
+            { id: 'studio', label: 'Studio' },
+            { id: 'services', label: 'Services' },
+            { id: 'portfolio', label: 'Portfolio' },
+            { id: 'experience', label: 'Experience' },
+          ].map((item) => (
+            <button key={item.id} onClick={() => { setIsMobileMenuOpen(false); goTo(item.id); }} className="text-2xl font-extrabold text-white hover:text-[#fb923c]">{item.label}</button>
+          ))}
+          <button onClick={() => { setIsMobileMenuOpen(false); setPage('invoice'); }} className="text-2xl font-extrabold text-[#fb923c]">Invoice</button>
+          <button onClick={() => { setIsMobileMenuOpen(false); setConsultationOpen(true); }} className="grad-btn text-white px-8 py-3.5 rounded-full text-xs font-extrabold uppercase tracking-widest mt-4">Book Consultation</button>
         </div>
       )}
 
-      <main id="main-content" role="main">
+      {page === 'invoice' ? (
+        <InvoiceSection />
+      ) : (
+        <main id="main-content" role="main">
+          {/* Hero Section */}
+          <section id="hero" className="relative min-h-screen w-full overflow-hidden flex items-center">
+            <div className="absolute inset-0">
+              <img src="./Hall.jpeg" alt="Bright Luxury Living Room" className="w-full h-full object-cover hero-zoom" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#2b0a54]/95 via-[#4c1d95]/80 to-[#2b0a54]/95" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1e0a3c] via-transparent to-[#1e0a3c]/60" />
+            </div>
+            <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#ee4b1f]/25 blur-[110px]" />
+            <div className="absolute top-1/3 right-0 w-[28rem] h-[28rem] rounded-full bg-[#c026d3]/25 blur-[130px]" />
 
-      {/* Hero Section */}
-      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 bg-[#0F0F0F]/40 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-transparent to-[#FDFBF7] z-10"></div>
-
-        <div className="absolute inset-0 w-full h-full">
-          <img
-            src="./Hall.jpeg"
-            alt="Bright Luxury Living Room"
-            className="w-full h-full object-cover hero-zoom opacity-90 filter brightness-[1.05]"
-          />
-        </div>
-
-        <div className="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-5xl mx-auto pt-16">
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-200 italic font-normal mb-6 max-w-2xl leading-snug">
-            Designing The Future Of Luxury Living.
-          </p>
-
-          <p className="text-gray-400 font-light text-sm md:text-base max-w-xl mb-10 leading-relaxed">
-            Crafting luminous, high-end residential and commercial spaces defined by natural daylight, tactile stone textures, and precise spatial engineering.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-5">
-            <a
-              href="#portfolio"
-              className="bg-[#C9A76A] text-[#0F0F0F] px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:bg-[#E3C388] transition-colors duration-500 shadow-xl"
-              onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-            >
-              Explore Masterpieces
-              <IconArrowRight size={15} />
-            </a>
-            <button
-              onClick={() => setConsultationOpen(true)}
-              className="bg-transparent border border-gray-400 text-gray-300 px-8 py-4 uppercase tracking-widest text-xs font-semibold flex items-center justify-center gap-3 hover:border-[#C9A76A] hover:text-[#C9A76A] transition-colors duration-500"
-              onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-            >
-              <IconPlay size={14} className="fill-current text-[#C9A76A]" />
-              Book Private Consultation
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Interactive Modern House Interior Showcase (Rooms Explorer) */}
-      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-800 bg-[#0F0F0F]">
-        <div className="text-center mb-16">
-          <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-3 font-semibold">Spatial Exploration</span>
-          <h2 className="font-serif text-3xl md:text-5xl mb-4 leading-tight text-[#F5F5F5]">Modern House Interiors</h2>
-          <p className="text-gray-400 font-light text-sm max-w-lg mx-auto">Select a zone below to experience our signature warm luxury design language across different spaces.</p>
-
-          {/* Room Selection Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-8">
-            {[
-              { id: 'living', label: 'Living Room' },
-              { id: 'bedroom', label: 'Bedroom' },
-              { id: 'kitchen', label: 'Kitchen' },
-              { id: 'bathroom', label: 'Bathroom' },
-              { id: 'entrance', label: 'Entrance' },
-              { id: 'mandir', label: 'Mandir' }
-            ].map((room) => (
-              <button
-                key={room.id}
-                onClick={() => setSelectedRoom(room.id)}
-                className={`px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300 border ${selectedRoom === room.id ? 'bg-[#C9A76A] text-[#0F0F0F] border-[#1A1A1A] font-semibold' : 'bg-[#0F0F0F] text-gray-300 border-gray-800 hover:border-[#C9A76A]'}`}
-                onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-              >
-                {room.label}
-              </button>
+            {/* Floating icon tiles */}
+            {heroTiles.map(({ Icon, cls, delay }, i) => (
+              <div key={i} className={`float-tile hidden lg:flex text-[#4c1d95] ${cls}`} style={{ animationDelay: delay }}>
+                <Icon size={26} />
+              </div>
             ))}
-          </div>
-        </div>
 
-        {/* Dynamic Room Preview Display */}
-        <div className="relative rounded-lg overflow-hidden border border-gray-800 bg-[#0F0F0F] shadow-xl transition-all duration-700">
-          <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-            <div className="lg:col-span-7 h-[400px] md:h-[520px] overflow-hidden relative">
-              <img
-                src={(roomSpaces as any)[selectedRoom].image}
-                alt={(roomSpaces as any)[selectedRoom].title}
-                className="w-full h-full object-cover bg-transparent filter brightness-[1.02] transition-all duration-700 hover:scale-105"
-              />
-            </div>
-            <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center">
-              <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs font-semibold mb-3">Signature Space</span>
-              <h3 className="font-serif text-3xl md:text-4xl mb-4 leading-snug text-[#F5F5F5]">{(roomSpaces as any)[selectedRoom].title}</h3>
-              <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed mb-8">
-                {(roomSpaces as any)[selectedRoom].subtitle}
-              </p>
-              <button
-                onClick={() => setConsultationOpen(true)}
-                className="self-start border border-gray-600 text-gray-300 px-6 py-3 uppercase tracking-widest text-xs font-medium hover:border-[#C9A76A] hover:text-[#C9A76A] transition-colors"
-              >
-                Inquire For This Space
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Studio / About Section */}
-      <section id="studio" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-800">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">The Studio</span>
-            <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight text-[#F5F5F5]">
-              A minimalist approach to <br/>
-              <span className="text-[#C9A76A] italic">maximal living.</span>
-            </h2>
-            <p className="text-gray-400 text-base md:text-lg font-light leading-relaxed mb-10 max-w-lg">
-              We transcend traditional interior design. By fusing world-class architectural principles with cutting-edge spatial technology, we craft environments that don't just look spectacular—they anticipate your lifestyle.
-            </p>
-
-            <div className="grid grid-cols-2 gap-8 border-t border-gray-800 pt-10">
-              <div>
-                <div className="text-4xl font-serif text-[#F5F5F5] mb-2">15+</div>
-                <div className="text-xs tracking-widest text-gray-500 uppercase">Years Legacy</div>
-              </div>
-              <div>
-                <div className="text-4xl font-serif text-[#F5F5F5] mb-2">500+</div>
-                <div className="text-xs tracking-widest text-gray-500 uppercase">Global Masterpieces</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <div className="absolute inset-0 border border-[#C9A76A]/40 translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
-            <img
-              src="./Mandir.jpeg"
-              alt="Studio Philosophy"
-              className="relative z-10 w-full object-cover bg-transparent aspect-[4/5] filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-700 shadow-md"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Services Hub */}
-      <section id="services" className="py-24 bg-[#0F0F0F] border-y border-gray-800">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20">
-            <div>
-              <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">Our Expertise</span>
-              <h2 className="font-serif text-4xl md:text-5xl text-[#F5F5F5]">End-to-End <br/>Execution.</h2>
-            </div>
-            <p className="text-gray-400 font-light max-w-md text-sm mt-4 md:mt-0">
-              From initial structural coordination to bespoke furniture manufacturing and smart home automation.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { title: "Residential Interiors", desc: "Bespoke villas, luxury penthouses, and private estates curated around elite comfort." },
-              { title: "Commercial Spaces", desc: "Award-winning corporate HQs, flagship retail outlets, and five-star hospitality venues." },
-              { title: "Turnkey Architecture", desc: "Complete architectural planning, structural coordination, facade engineering, and landscaping." }
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="group p-10 bg-[#0F0F0F] border border-gray-800 hover:border-[#C9A76A] transition-colors duration-500 relative overflow-hidden shadow-sm"
-                onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-              >
-                <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-500">
-                  <IconArrowRight className="text-[#C9A76A]" size={22} />
-                </div>
-                <div className="text-[#C9A76A] font-serif text-2xl mb-4 opacity-60 group-hover:opacity-100 transition-opacity">
-                  0{index + 1}
-                </div>
-                <h3 className="font-serif text-2xl mb-4 text-[#F5F5F5]">{service.title}</h3>
-                <p className="text-gray-400 font-light text-sm leading-relaxed mb-8">
-                  {service.desc}
+            <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 pt-32 pb-24 grid lg:grid-cols-2 gap-14 items-center">
+              <div className="reveal in">
+                <span className="inline-flex items-center gap-2 glass rounded-full px-5 py-2 text-[11px] font-extrabold tracking-[0.22em] uppercase text-purple-100">
+                  <span className="w-2 h-2 rounded-full bg-[#ee4b1f]" /> Smart Home & Luxury Interiors
+                </span>
+                <h1 className="text-5xl md:text-7xl font-black leading-[1.04] mt-7">
+                  Designing The Future Of <span className="grad-text">Luxury Living.</span>
+                </h1>
+                <p className="text-purple-200/85 font-semibold text-base md:text-lg max-w-xl mt-7 leading-relaxed">
+                  From modular kitchens to cove-lit ceilings and home automation — we engineer luminous, high-end residential spaces that anticipate your lifestyle.
                 </p>
-                <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9A76A] group-hover:w-full transition-all duration-700 ease-out"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Showcase */}
-      <section id="portfolio" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-          <div>
-            <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">Portfolio</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#F5F5F5]">Curated Masterpieces</h2>
-          </div>
-
-          {/* Category Filter */}
-          <div className="flex space-x-6 mt-6 md:mt-0 text-xs uppercase tracking-widest font-medium">
-            {['All', 'Residential', 'Commercial', 'Retail'].map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab.toLowerCase())}
-                className={`pb-1 transition-colors ${activeTab === tab.toLowerCase() ? 'text-[#C9A76A] border-b border-[#C9A76A]' : 'text-gray-500 hover:text-[#F5F5F5]'}`}
-                onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-          {filteredProjects.map((project, index) => (
-            <div
-              key={project.id}
-              onClick={() => setActiveProject(project)}
-              className={`project-card cursor-pointer group ${index % 2 !== 0 ? 'md:mt-24' : ''}`}
-              onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-            >
-              <div className="overflow-hidden relative mb-6 bg-gray-200 shadow-md">
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="project-img w-full h-[55vh] object-cover bg-transparent transition-transform duration-1000 ease-out"
-                />
-                <div className="absolute bottom-6 right-6 z-20 bg-[#0F0F0F]/90 backdrop-blur-md px-4 py-2 text-xs uppercase tracking-widest text-[#F5F5F5] border border-gray-800 shadow">
-                  Explore Case Study
+                <div className="flex flex-col sm:flex-row gap-4 mt-10">
+                  <button onClick={() => goTo('portfolio')} className="grad-btn text-white px-8 py-4 rounded-full font-extrabold uppercase tracking-widest text-xs flex items-center justify-center gap-3">
+                    Explore Masterpieces <IconArrowRight size={15} />
+                  </button>
+                  <button onClick={() => setConsultationOpen(true)} className="glass text-white px-8 py-4 rounded-full font-extrabold uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:bg-white/15 transition-colors">
+                    <IconPlay size={13} className="text-[#fb923c]" /> Free Site Visit
+                  </button>
+                </div>
+                <div className="flex items-center gap-8 mt-12">
+                  <div><div className="text-3xl font-black text-white">500+</div><div className="text-[11px] font-bold tracking-[0.2em] uppercase text-purple-300/80">Projects Done</div></div>
+                  <div className="w-px h-10 bg-white/15" />
+                  <div><div className="text-3xl font-black text-white">15+</div><div className="text-[11px] font-bold tracking-[0.2em] uppercase text-purple-300/80">Years Legacy</div></div>
+                  <div className="w-px h-10 bg-white/15" />
+                  <div><div className="text-3xl font-black text-white">4.9</div><div className="text-[11px] font-bold tracking-[0.2em] uppercase text-purple-300/80">Google Rating</div></div>
                 </div>
               </div>
-              <div className="flex justify-between items-center">
+
+              {/* Client Access Card */}
+              <div className="reveal in">
+                <div className="glass-strong rounded-3xl p-7 md:p-9 shadow-2xl">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-11 h-11 rounded-2xl bg-[#ee4b1f] flex items-center justify-center text-white"><IconLock size={20} /></div>
+                    <div>
+                      <h3 className="font-black text-xl">Client Access</h3>
+                      <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-purple-300/80">Quick Quote Request</p>
+                    </div>
+                  </div>
+                  <form onSubmit={(e) => { e.preventDefault(); setConsultationOpen(true); }} className="space-y-4">
+                    <div>
+                      <label className="block text-[11px] font-extrabold tracking-[0.18em] uppercase text-purple-200/80 mb-2">Full Name</label>
+                      <input required type="text" className="w-full bg-[#ede9fe] text-[#2b0a54] rounded-xl px-4 py-3 text-sm font-semibold placeholder:text-[#2b0a54]/40 outline-none focus:ring-2 focus:ring-[#ee4b1f]" placeholder="e.g., Aarav Sharma" />
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-extrabold tracking-[0.18em] uppercase text-purple-200/80 mb-2">Phone</label>
+                      <input required type="tel" className="w-full bg-[#ede9fe] text-[#2b0a54] rounded-xl px-4 py-3 text-sm font-semibold placeholder:text-[#2b0a54]/40 outline-none focus:ring-2 focus:ring-[#ee4b1f]" placeholder="+91 98200 12345" />
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-extrabold tracking-[0.18em] uppercase text-purple-200/80 mb-2">Service</label>
+                      <select className="w-full bg-[#ede9fe] text-[#2b0a54] rounded-xl px-4 py-3 text-sm font-semibold outline-none focus:ring-2 focus:ring-[#ee4b1f]">
+                        <option>Complete Home Interiors</option>
+                        <option>Modular Kitchen</option>
+                        <option>False Ceiling & Lighting</option>
+                        <option>Wardrobe & Storage</option>
+                        <option>Smart Home Automation</option>
+                      </select>
+                    </div>
+                    <button type="submit" className="grad-btn w-full text-white py-3.5 rounded-xl font-extrabold uppercase tracking-[0.18em] text-xs">Request Callback</button>
+                    <p className="text-[11px] text-purple-300/70 text-center font-semibold">Free consultation within 2 hours — Mon to Sat, 10AM – 7PM</p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Marquee strip */}
+          <div className="relative py-5 overflow-hidden border-y border-white/10 bg-[#2b0a54]/60">
+            <div className="marquee-track gap-10 text-sm font-extrabold tracking-[0.24em] uppercase text-purple-200/80">
+              {[0, 1].map((n) => (
+                <div key={n} className="flex items-center gap-10 shrink-0">
+                  {['Modular Kitchens', 'False Ceilings', 'Wardrobes', 'Italian Marble', 'Smart Lighting', 'Cove Lighting', 'Fluted Panels', 'Home Automation', 'Turnkey Interiors'].map((s) => (
+                    <span key={s} className="flex items-center gap-10"><span>{s}</span> <IconMolecule size={16} className="text-[#ee4b1f]" /></span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Room Explorer */}
+          <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto reveal">
+            <div className="text-center mb-14">
+              <span className="text-[#fb923c] tracking-[0.25em] uppercase text-xs font-extrabold block mb-3">Spatial Exploration</span>
+              <h2 className="text-4xl md:text-6xl font-black">Modern House <span className="grad-text">Interiors</span></h2>
+              <p className="text-purple-200/80 font-semibold text-sm max-w-lg mx-auto mt-4">Select a zone below to experience our signature warm luxury design language across different spaces.</p>
+              <div className="flex flex-wrap justify-center gap-3 mt-9">
+                {[
+                  { id: 'living', label: 'Living Room' },
+                  { id: 'bedroom', label: 'Bedroom' },
+                  { id: 'kitchen', label: 'Kitchen' },
+                  { id: 'bathroom', label: 'Bathroom' },
+                  { id: 'entrance', label: 'Entrance' },
+                  { id: 'mandir', label: 'Mandir' }
+                ].map((room) => (
+                  <button
+                    key={room.id}
+                    onClick={() => setSelectedRoom(room.id)}
+                    className={`px-6 py-3 rounded-full text-xs font-extrabold uppercase tracking-widest transition-all duration-300 border ${selectedRoom === room.id ? 'bg-[#ee4b1f] text-white border-[#ee4b1f] shadow-lg shadow-[#ee4b1f]/40' : 'glass text-purple-100 hover:border-[#fb923c]/50'}`}
+                  >
+                    {room.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative rounded-3xl overflow-hidden glass shadow-2xl">
+              <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
+                <div className="lg:col-span-7 h-[380px] md:h-[520px] overflow-hidden relative">
+                  <img
+                    src={(roomSpaces as any)[selectedRoom].image}
+                    alt={(roomSpaces as any)[selectedRoom].title}
+                    className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                  />
+                </div>
+                <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center">
+                  <span className="text-[#fb923c] tracking-[0.2em] uppercase text-xs font-extrabold mb-3">Signature Space</span>
+                  <h3 className="text-3xl md:text-4xl font-black mb-4 leading-snug">{(roomSpaces as any)[selectedRoom].title}</h3>
+                  <p className="text-purple-200/80 font-semibold text-sm md:text-base leading-relaxed mb-8">{(roomSpaces as any)[selectedRoom].subtitle}</p>
+                  <button onClick={() => setConsultationOpen(true)} className="self-start grad-btn text-white px-7 py-3.5 rounded-full font-extrabold uppercase tracking-widest text-xs">Inquire For This Space</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Studio / About + Infographic-style stats */}
+          <section id="studio" className="py-24 px-6 md:px-12 max-w-7xl mx-auto reveal">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <span className="text-[#fb923c] tracking-[0.25em] uppercase text-xs font-extrabold block mb-4">The Studio</span>
+                <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">
+                  A minimalist approach to <span className="grad-text">maximal living.</span>
+                </h2>
+                <p className="text-purple-200/85 font-semibold text-base md:text-lg leading-relaxed mb-10 max-w-lg">
+                  We transcend traditional interior design. By fusing world-class architectural principles with cutting-edge spatial technology, we craft environments that don't just look spectacular — they anticipate your lifestyle.
+                </p>
+                <div className="grid grid-cols-3 gap-4">
+                  {stats.map(({ Icon, value, label }) => (
+                    <div key={label} className="bg-white rounded-2xl p-5 text-[#2b0a54] shadow-xl text-center">
+                      <div className="w-11 h-11 rounded-xl bg-[#ee4b1f] text-white flex items-center justify-center mx-auto mb-3"><Icon size={20} /></div>
+                      <div className="text-2xl md:text-3xl font-black">{value}</div>
+                      <div className="text-[10px] font-extrabold tracking-[0.14em] uppercase text-[#2b0a54]/60 mt-1">{label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="relative group">
+                <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-[#ee4b1f] via-[#c026d3] to-[#6d28d9] opacity-70 blur-sm group-hover:opacity-100 transition-opacity" />
+                <img src="./Mandir.jpeg" alt="Studio Philosophy" className="relative z-10 w-full object-cover aspect-[4/5] rounded-3xl shadow-2xl" />
+              </div>
+            </div>
+          </section>
+
+          {/* Services Hub */}
+          <section id="services" className="py-24 grad-page border-y border-white/10">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 reveal">
+              <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                 <div>
-                  <h3 className="font-serif text-2xl mb-1 text-[#F5F5F5]">{project.title}</h3>
-                  <p className="text-xs tracking-widest text-gray-500 uppercase">{project.category} &bull; {project.location}</p>
+                  <span className="text-[#fb923c] tracking-[0.25em] uppercase text-xs font-extrabold block mb-4">Our Expertise</span>
+                  <h2 className="text-4xl md:text-6xl font-black">End-to-End <span className="grad-text">Execution.</span></h2>
                 </div>
-                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-[#1A1A1A] group-hover:bg-[#1A1A1A] group-hover:text-white transition-colors">
-                  <IconArrowRight size={18} className="-rotate-45" />
-                </div>
+                <p className="text-purple-200/80 font-semibold max-w-md text-sm">From initial structural coordination to bespoke furniture manufacturing and smart home automation.</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                  { n: '01', Icon: IconHome, title: 'Residential Interiors', desc: 'Bespoke villas, luxury penthouses, and private estates curated around elite comfort.' },
+                  { n: '02', Icon: IconGear, title: 'Commercial Spaces', desc: 'Award-winning corporate HQs, flagship retail outlets, and five-star hospitality venues.' },
+                  { n: '03', Icon: IconShield, title: 'Turnkey Architecture', desc: 'Complete architectural planning, structural coordination, facade engineering, and landscaping.' }
+                ].map(({ n, Icon, title, desc }) => (
+                  <div key={n} className="group glass rounded-3xl p-10 hover:bg-white/10 transition-all duration-500 relative overflow-hidden">
+                    <div className="absolute top-6 right-8 text-6xl font-black text-white/5 group-hover:text-[#ee4b1f]/20 transition-colors">{n}</div>
+                    <div className="w-14 h-14 rounded-2xl bg-[#ee4b1f] text-white flex items-center justify-center mb-6 shadow-lg shadow-[#ee4b1f]/40"><Icon size={26} /></div>
+                    <h3 className="text-2xl font-black mb-4">{title}</h3>
+                    <p className="text-purple-200/80 font-semibold text-sm leading-relaxed mb-8">{desc}</p>
+                    <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[#ee4b1f] to-[#c026d3] group-hover:w-full transition-all duration-700" />
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
-      </section>
+          </section>
 
-      {/* Experience / Interactive Showroom Banner */}
-      <section id="experience" className="py-24 bg-[#0F0F0F] border-t border-gray-800 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <span className="text-[#C9A76A] tracking-[0.25em] uppercase text-xs block mb-4 font-semibold">Digital Showroom</span>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6 text-[#F5F5F5]">Experience Architecture Before It's Built.</h2>
-            <p className="text-gray-400 font-light mb-8 leading-relaxed">
-              Step inside virtual 3D walkthroughs, experiment with high-end Italian marbles and custom architectural wood veneers in real-time, and collaborate directly with our principal designers.
-            </p>
-            <button
-              onClick={() => setConsultationOpen(true)}
-              className="bg-[#C9A76A] text-[#0F0F0F] px-8 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-[#E3C388] transition-colors"
-            >
-              Schedule Virtual Tour
-            </button>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img src="./Showroom_Entrance_1.jpeg" alt="Patil's Entrance Door Design" className="w-full h-64 object-cover bg-transparent shadow-sm filter brightness-[1.02]" />
-            <img src="./Showroom_Entrance_2.jpg" alt="Naskar's Entrance Door Design" className="w-full h-64 object-cover bg-transparent mt-8 shadow-sm filter brightness-[1.02]" />
-          </div>
-        </div>
-      </section>
-
-      </main>
-      {/* Project Cost Estimator */}
-      <section className="py-24 bg-[#0F0F0F] border-t border-gray-800">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs font-semibold block mb-3">Cost Estimator</span>
-            <h2 className="font-serif text-3xl md:text-5xl text-[#F5F5F5]">Calculate Your Interior Cost</h2>
-          </div>
-
-          <div className="bg-[#1A1A1A] p-8 md:p-12 rounded-sm border border-gray-800 shadow-2xl">
-            <div className="space-y-8">
-              {/* Square Footage Slider */}
+          {/* Portfolio Showcase */}
+          <section id="portfolio" className="py-24 px-6 md:px-12 max-w-7xl mx-auto reveal">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-14 gap-6">
               <div>
-                <div className="flex justify-between items-end mb-4">
-                  <label className="text-gray-300 font-bold bg-black/40 px-4 py-2 rounded-lg uppercase tracking-wider text-sm">Area (Sq. Ft.)</label>
-                  <span className="text-[#C9A76A] font-serif text-2xl">{sqFt.toLocaleString('en-IN')} sq.ft</span>
-                </div>
-                <input
-                  type="range"
-                  min="500"
-                  max="100000"
-                  step="100"
-                  value={sqFt}
-                  onChange={(e) => setSqFt(Number(e.target.value))}
-                  className="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#C9A76A]"
-                />
-                <div className="flex justify-between text-xs text-gray-500 mt-2">
-                  <span>500 sq.ft</span>
-                  <span>1,00,000+ sq.ft</span>
-                </div>
+                <span className="text-[#fb923c] tracking-[0.25em] uppercase text-xs font-extrabold block mb-4">Portfolio</span>
+                <h2 className="text-4xl md:text-6xl font-black">Curated <span className="grad-text">Masterpieces</span></h2>
               </div>
-
-              {/* Rate per Sq Ft Slider */}
-              <div>
-                <div className="flex justify-between items-end mb-4">
-                  <label className="text-gray-300 font-bold bg-black/40 px-4 py-2 rounded-lg uppercase tracking-wider text-sm">Design & Material Quality (Rate per Sq. Ft.)</label>
-                  <span className="text-[#C9A76A] font-serif text-2xl">₹{ratePerSqFt.toLocaleString('en-IN')}</span>
-                </div>
-                <input
-                  type="range"
-                  min="999"
-                  max="100000"
-                  step="100"
-                  value={ratePerSqFt}
-                  onChange={(e) => setRatePerSqFt(Number(e.target.value))}
-                  className="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#C9A76A]"
-                />
-                <div className="flex justify-between text-xs text-gray-500 mt-2">
-                  <span>₹999 (Essential)</span>
-                  <span>₹1,00,000 (Ultra Luxury)</span>
-                </div>
+              <div className="flex flex-wrap gap-3 mt-6 md:mt-0">
+                {['All', 'Residential', 'Commercial', 'Retail'].map((tab) => (
+                  <button
+                    key={tab}
+                    onClick={() => setActiveTab(tab.toLowerCase())}
+                    className={`px-5 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-widest transition-all ${activeTab === tab.toLowerCase() ? 'bg-[#ee4b1f] text-white shadow-lg shadow-[#ee4b1f]/40' : 'glass text-purple-100/80 hover:text-white'}`}
+                  >
+                    {tab}
+                  </button>
+                ))}
               </div>
+            </div>
 
-              {/* Total Estimated Cost */}
-              <div className="pt-8 mt-8 border-t border-gray-800 text-center">
-                <span className="text-gray-400 uppercase tracking-widest text-xs block mb-2">Estimated Total Cost</span>
-                <div className="font-serif text-5xl md:text-6xl text-[#F5F5F5]">
-                  ₹{(sqFt * ratePerSqFt).toLocaleString('en-IN')}
-                </div>
-                <p className="text-gray-500 text-sm mt-4 italic">*This is a rough estimate. Final cost depends on specific material selection and scope of work.</p>
-                <button
-                  onClick={() => setConsultationOpen(true)}
-                  className="mt-8 px-8 py-4 bg-[#C9A76A] text-[#0F0F0F] font-medium tracking-wide uppercase text-sm hover:bg-[#b5955b] transition-colors"
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
+              {filteredProjects.map((project, index) => (
+                <div
+                  key={project.id}
+                  onClick={() => setActiveProject(project)}
+                  className={`group cursor-pointer ${index % 2 !== 0 ? 'md:mt-20' : ''}`}
                 >
-                  Get a Detailed Quote
-                </button>
+                  <div className="overflow-hidden rounded-3xl relative mb-6 glass p-1.5">
+                    <img src={project.image} alt={project.title} className="w-full h-[46vh] object-cover rounded-[20px] transition-transform duration-1000 group-hover:scale-105" />
+                    <div className="absolute bottom-6 right-6 z-20 glass-strong rounded-full px-4 py-2 text-[10px] font-extrabold uppercase tracking-widest text-white">Explore Case Study</div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <div>
+                      <h3 className="text-2xl font-black mb-1">{project.title}</h3>
+                      <p className="text-[11px] font-bold tracking-widest text-purple-300/80 uppercase">{project.category} &bull; {project.location}</p>
+                    </div>
+                    <div className="w-12 h-12 rounded-full glass flex items-center justify-center group-hover:bg-[#ee4b1f] group-hover:border-[#ee4b1f] transition-colors">
+                      <IconArrowRight size={18} className="-rotate-45" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Experience / Showroom Banner */}
+          <section id="experience" className="py-24 grad-page border-y border-white/10">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
+              <div>
+                <span className="text-[#fb923c] tracking-[0.25em] uppercase text-xs font-extrabold block mb-4">Digital Showroom</span>
+                <h2 className="text-4xl md:text-6xl font-black mb-6">Experience Architecture <span className="grad-text">Before It's Built.</span></h2>
+                <p className="text-purple-200/85 font-semibold mb-9 leading-relaxed">
+                  Step inside virtual 3D walkthroughs, experiment with high-end Italian marbles and custom architectural wood veneers in real-time, and collaborate directly with our principal designers.
+                </p>
+                <button onClick={() => setConsultationOpen(true)} className="grad-btn text-white px-8 py-4 rounded-full font-extrabold uppercase tracking-widest text-xs">Schedule Virtual Tour</button>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <img src="./Showroom_Entrance_1.jpeg" alt="Patil's Entrance Door Design" className="w-full h-64 object-cover rounded-2xl shadow-xl" />
+                <img src="./Showroom_Entrance_2.jpg" alt="Naskar's Entrance Door Design" className="w-full h-64 object-cover rounded-2xl mt-8 shadow-xl" />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+
+          {/* Cost Estimator */}
+          <section className="py-24 px-6 md:px-12">
+            <div className="max-w-4xl mx-auto reveal">
+              <div className="text-center mb-12">
+                <span className="text-[#fb923c] tracking-[0.25em] uppercase text-xs font-extrabold block mb-3">Cost Estimator</span>
+                <h2 className="text-4xl md:text-5xl font-black">Calculate Your <span className="grad-text">Interior Cost</span></h2>
+              </div>
+              <div className="glass-strong p-8 md:p-12 rounded-3xl">
+                <div className="space-y-9">
+                  <div>
+                    <div className="flex justify-between items-end mb-4">
+                      <label className="text-purple-100 font-extrabold text-sm uppercase tracking-widest">Area (Sq. Ft.)</label>
+                      <span className="text-[#fb923c] text-2xl font-black">{sqFt.toLocaleString('en-IN')} sq.ft</span>
+                    </div>
+                    <input type="range" min="500" max="100000" step="100" value={sqFt} onChange={(e) => setSqFt(Number(e.target.value))} className="w-full accent-[#ee4b1f] h-1.5" />
+                    <div className="flex justify-between text-[11px] font-bold text-purple-300/70 mt-2"><span>500 sq.ft</span><span>1,00,000+ sq.ft</span></div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between items-end mb-4">
+                      <label className="text-purple-100 font-extrabold text-sm uppercase tracking-widest">Design & Material Quality (Rate per Sq. Ft.)</label>
+                      <span className="text-[#fb923c] text-2xl font-black">₹{ratePerSqFt.toLocaleString('en-IN')}</span>
+                    </div>
+                    <input type="range" min="999" max="100000" step="100" value={ratePerSqFt} onChange={(e) => setRatePerSqFt(Number(e.target.value))} className="w-full accent-[#ee4b1f] h-1.5" />
+                    <div className="flex justify-between text-[11px] font-bold text-purple-300/70 mt-2"><span>₹999 (Essential)</span><span>₹1,00,000 (Ultra Luxury)</span></div>
+                  </div>
+                  <div className="pt-8 mt-4 border-t border-white/10 text-center">
+                    <span className="text-purple-300/80 uppercase tracking-[0.22em] text-[11px] font-extrabold block mb-2">Estimated Total Cost</span>
+                    <div className="text-5xl md:text-6xl font-black grad-text">₹{(sqFt * ratePerSqFt).toLocaleString('en-IN')}</div>
+                    <p className="text-purple-300/70 text-sm mt-4 italic font-semibold">*This is a rough estimate. Final cost depends on specific material selection and scope of work.</p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                      <button onClick={() => setConsultationOpen(true)} className="grad-btn text-white px-8 py-4 rounded-full font-extrabold uppercase tracking-widest text-xs">Get a Detailed Quote</button>
+                      <button onClick={() => setPage('invoice')} className="glass text-white px-8 py-4 rounded-full font-extrabold uppercase tracking-widest text-xs hover:bg-white/15 transition-colors">View Sample Invoice</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      )}
 
       {/* Footer */}
-
-      <footer className="bg-[#C9A76A] text-[#0F0F0F] pt-24 pb-12 px-6 md:px-12 border-t border-gray-800" role="contentinfo">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+      <footer className="relative pt-24 pb-12 px-6 md:px-12 overflow-hidden border-t border-white/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2b0a54] to-[#160728] -z-10" />
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <img src="./logo  2.jpeg" alt="Space Age Interiors" className="h-16 md:h-20 w-auto invert brightness-125 mb-6" />
-            <p className="text-gray-800 font-light text-sm max-w-sm leading-relaxed mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-12 h-12 rounded-2xl bg-[#ee4b1f] flex items-center justify-center text-black"><IconMolecule size={24} /></span>
+              <div>
+                <p className="font-black tracking-[0.22em] text-black">SPACE AGE</p>
+                <p className="text-[9px] tracking-[0.4em] text-purple-300/80 uppercase">Interiors</p>
+              </div>
+            </div>
+            <p className="text-purple-200/75 font-semibold text-sm max-w-sm leading-relaxed mb-8">
               Luxury. Innovation. Precision. Crafting timeless architectural environments for modern living.
             </p>
+            <div className="flex gap-3">
+              {SOCIALS.map(({ Icon, label }) => (
+                <a key={label} href="#" aria-label={label} className="w-10 h-10 rounded-full glass flex items-center justify-center text-purple-100 hover:bg-[#ee4b1f] hover:text-black hover:border-[#ee4b1f] transition-colors"><Icon size={17} /></a>
+              ))}
+            </div>
           </div>
-
           <div>
-            <h4 className="text-black tracking-widest uppercase text-xs font-semibold mb-6">Navigation</h4>
-            <ul className="space-y-4 text-xs tracking-wider text-gray-800 uppercase font-light">
-              <li><a href="#studio" className="hover:text-black transition-colors">Studio</a></li>
-              <li><a href="#services" className="hover:text-black transition-colors">Services</a></li>
-              <li><a href="#portfolio" className="hover:text-black transition-colors">Portfolio</a></li>
-              <li><a href="#experience" className="hover:text-black transition-colors">Experience</a></li>
+            <h4 className="text-[#fb923c] tracking-[0.2em] uppercase text-xs font-extrabold mb-6">Navigation</h4>
+            <ul className="space-y-4 text-xs font-bold tracking-wider text-purple-200/80 uppercase">
+              <li><button onClick={() => goTo('studio')} className="hover:text-[#fb923c] transition-colors">Studio</button></li>
+              <li><button onClick={() => goTo('services')} className="hover:text-[#fb923c] transition-colors">Services</button></li>
+              <li><button onClick={() => goTo('portfolio')} className="hover:text-[#fb923c] transition-colors">Portfolio</button></li>
+              <li><button onClick={() => goTo('experience')} className="hover:text-[#fb923c] transition-colors">Experience</button></li>
+              <li><button onClick={() => setPage('invoice')} className="hover:text-[#fb923c] transition-colors">Invoice</button></li>
             </ul>
           </div>
-
           <div>
-            <h4 className="text-black tracking-widest uppercase text-xs font-semibold mb-6">Contact</h4>
-            <ul className="space-y-4 text-xs tracking-wider text-gray-800 font-light">
-              <li>R21, Malad (East), Mumbai - 400097.</li>
+            <h4 className="text-[#fb923c] tracking-[0.2em] uppercase text-xs font-extrabold mb-6">Contact</h4>
+            <ul className="space-y-4 text-xs font-semibold tracking-wider text-purple-200/80">
+              <li className="flex items-start gap-2"><IconMapPin size={15} className="text-[#ee4b1f] mt-0.5 shrink-0" /> R21, Malad (East), Mumbai - 400097.</li>
               <li>spaceageinterior22@gmail.com</li>
               <li>+91-8097499616</li>
-              <li className="pt-2"><span className="text-[#C9A76A] font-medium">Mon – Sat:</span> 10AM – 7PM</li>
+              <li className="pt-2"><span className="text-[#fb923c] font-extrabold">Mon – Sat:</span> 10AM – 7PM</li>
             </ul>
           </div>
         </div>
-
-        <div className="max-w-7xl mx-auto border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-700">
+        <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-purple-300/60 font-semibold">
           <p>&copy; {new Date().getFullYear()} Space Age Interiors. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-gray-300">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-300">Terms of Service</a>
+            <a href="#" className="hover:text-[#fb923c]">Privacy Policy</a>
+            <a href="#" className="hover:text-[#fb923c]">Terms of Service</a>
           </div>
         </div>
       </footer>
 
       {/* Consultation Modal */}
       {consultationOpen && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-[#0F0F0F] border border-gray-800 max-w-lg w-full p-8 md:p-10 relative shadow-2xl">
-            <button onClick={() => setConsultationOpen(false)} className="absolute top-6 right-6 text-gray-400 hover:text-white">
-              <IconX size={24} />
-            </button>
-            <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs block mb-2 font-semibold">Private Booking</span>
-            <h3 className="font-serif text-3xl mb-6 text-[#F5F5F5]">Book Consultation</h3>
-
-            <form onSubmit={(e) => { e.preventDefault(); alert("Consultation request received. Our principal architect will contact you within 2 hours."); setConsultationOpen(false); }} className="space-y-4">
+        <div className="fixed inset-0 z-50 bg-[#160728]/70 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="glass-strong max-w-lg w-full p-8 md:p-10 relative rounded-3xl shadow-2xl">
+            <button onClick={() => setConsultationOpen(false)} className="absolute top-6 right-6 text-purple-200 hover:text-white"><IconX size={24} /></button>
+            <span className="text-[#fb923c] tracking-[0.22em] uppercase text-xs font-extrabold block mb-2">Private Booking</span>
+            <h3 className="text-3xl font-black mb-6">Book Consultation</h3>
+            <form onSubmit={(e) => { e.preventDefault(); setConsultationOpen(false); alert("Consultation request received. Our principal architect will contact you within 2 hours."); }} className="space-y-4">
               <div>
-                <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Full Name</label>
-                <input required type="text" className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="e.g., Alexander Wright" />
+                <label className="block text-[11px] font-extrabold tracking-[0.18em] uppercase text-purple-200/80 mb-2">Full Name</label>
+                <input required type="text" className="w-full bg-[#ede9fe] text-[#2b0a54] rounded-xl px-4 py-3 text-sm font-semibold outline-none focus:ring-2 focus:ring-[#ee4b1f]" placeholder="e.g., Aarav Sharma" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Email</label>
-                  <input required type="email" className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="alexander@domain.com" />
+                  <label className="block text-[11px] font-extrabold tracking-[0.18em] uppercase text-purple-200/80 mb-2">Email</label>
+                  <input required type="email" className="w-full bg-[#ede9fe] text-[#2b0a54] rounded-xl px-4 py-3 text-sm font-semibold outline-none focus:ring-2 focus:ring-[#ee4b1f]" placeholder="you@domain.com" />
                 </div>
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Phone</label>
-                  <input required type="tel" className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none" placeholder="+1 (555) 019-2834" />
+                  <label className="block text-[11px] font-extrabold tracking-[0.18em] uppercase text-purple-200/80 mb-2">Phone</label>
+                  <input required type="tel" className="w-full bg-[#ede9fe] text-[#2b0a54] rounded-xl px-4 py-3 text-sm font-semibold outline-none focus:ring-2 focus:ring-[#ee4b1f]" placeholder="+91 98200 12345" />
                 </div>
               </div>
               <div>
-                <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">Property Type & Budget</label>
-                <select className="w-full bg-[#0F0F0F] border border-gray-700 p-3 text-[#F5F5F5] text-sm focus:border-[#C9A76A] outline-none">
-                  <option>Luxury Villa (₹2M - ₹5M+)</option>
-                  <option>Penthouse / Apartment (₹1M - ₹3M)</option>
-                  <option>Commercial Headquarters (₹5M+)</option>
+                <label className="block text-[11px] font-extrabold tracking-[0.18em] uppercase text-purple-200/80 mb-2">Property Type & Budget</label>
+                <select className="w-full bg-[#ede9fe] text-[#2b0a54] rounded-xl px-4 py-3 text-sm font-semibold outline-none focus:ring-2 focus:ring-[#ee4b1f]">
+                  <option>Luxury Villa (₹2Cr+)</option>
+                  <option>Penthouse / Apartment (₹1Cr - ₹3Cr)</option>
+                  <option>Commercial Headquarters (₹5Cr+)</option>
                   <option>Boutique Retail / Showroom</option>
                 </select>
               </div>
-              <button type="submit" className="w-full bg-[#C9A76A] text-[#0F0F0F] py-4 font-semibold uppercase tracking-widest text-xs hover:bg-[#E3C388] transition-colors mt-4">
-                Confirm Private Request
-              </button>
+              <button type="submit" className="grad-btn w-full text-white py-4 rounded-xl font-extrabold uppercase tracking-[0.18em] text-xs mt-2">Confirm Private Request</button>
             </form>
           </div>
         </div>
@@ -745,50 +756,25 @@ export default function App() {
 
       {/* Project Case Study Modal */}
       {activeProject && (
-        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-md flex items-center justify-center p-4 md:p-10 overflow-y-auto">
-          <div className="bg-[#0F0F0F] border border-gray-800 max-w-4xl w-full p-8 md:p-12 relative my-auto shadow-2xl">
-            <button onClick={() => setActiveProject(null)} className="absolute top-6 right-6 text-gray-400 hover:text-white">
-              <IconX size={26} />
-            </button>
-
-            <span className="text-[#C9A76A] tracking-[0.2em] uppercase text-xs block mb-2 font-semibold">{activeProject.category} &bull; {activeProject.location}</span>
-            <h2 className="font-serif text-3xl md:text-5xl mb-6 text-[#F5F5F5]">{activeProject.title}</h2>
-
-            <img src={activeProject.image} alt={activeProject.title} className="w-full h-[40vh] object-cover bg-transparent mb-8 shadow-sm filter brightness-[1.02]" />
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-gray-800 py-6 mb-8 text-xs uppercase tracking-wider">
-              <div>
-                <span className="text-gray-500 block mb-1">Total Area</span>
-                <span className="text-[#F5F5F5] font-semibold text-sm">{activeProject.area}</span>
-              </div>
-              <div>
-                <span className="text-gray-500 block mb-1">Budget Range</span>
-                <span className="text-[#F5F5F5] font-semibold text-sm">{activeProject.budget}</span>
-              </div>
-              <div>
-                <span className="text-gray-500 block mb-1">Timeline</span>
-                <span className="text-[#F5F5F5] font-semibold text-sm">{activeProject.timeline}</span>
-              </div>
-              <div>
-                <span className="text-gray-500 block mb-1">Status</span>
-                <span className="text-[#C9A76A] font-semibold text-sm">Completed & Handed Over</span>
-              </div>
+        <div className="fixed inset-0 z-50 bg-[#160728]/75 backdrop-blur-md flex items-center justify-center p-4 md:p-10 overflow-y-auto">
+          <div className="glass-strong max-w-4xl w-full p-8 md:p-12 relative my-auto rounded-3xl shadow-2xl">
+            <button onClick={() => setActiveProject(null)} className="absolute top-6 right-6 text-purple-200 hover:text-white"><IconX size={26} /></button>
+            <span className="text-[#fb923c] tracking-[0.22em] uppercase text-xs font-extrabold block mb-2">{activeProject.category} &bull; {activeProject.location}</span>
+            <h2 className="text-3xl md:text-5xl font-black mb-6">{activeProject.title}</h2>
+            <img src={activeProject.image} alt={activeProject.title} className="w-full h-[40vh] object-cover rounded-2xl mb-8 shadow-xl" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-white/10 py-6 mb-8 text-[11px] font-extrabold uppercase tracking-widest">
+              <div><span className="text-purple-300/70 block mb-1">Total Area</span><span className="text-white text-sm">{activeProject.area}</span></div>
+              <div><span className="text-purple-300/70 block mb-1">Budget Range</span><span className="text-white text-sm">{activeProject.budget}</span></div>
+              <div><span className="text-purple-300/70 block mb-1">Timeline</span><span className="text-white text-sm">{activeProject.timeline}</span></div>
+              <div><span className="text-purple-300/70 block mb-1">Status</span><span className="text-[#fb923c] text-sm">Completed & Handed Over</span></div>
             </div>
-
-            <p className="text-gray-300 font-light leading-relaxed text-base mb-8">
+            <p className="text-purple-100/85 font-semibold leading-relaxed text-base mb-8">
               {activeProject.desc} Our approach on this project centered on seamless indoor-outdoor thresholds, custom lighting choreography, and rigorous spatial optimization tailored to the client's private lifestyle requirements.
             </p>
-
-            <button
-              onClick={() => { setActiveProject(null); setConsultationOpen(true); }}
-              className="bg-[#C9A76A] text-[#0F0F0F] px-8 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-[#E3C388] transition-colors"
-            >
-              Inquire About Similar Design
-            </button>
+            <button onClick={() => { setActiveProject(null); setConsultationOpen(true); }} className="grad-btn text-white px-8 py-4 rounded-full font-extrabold uppercase tracking-widest text-xs">Inquire About Similar Design</button>
           </div>
         </div>
       )}
-
     </div>
   );
 }
