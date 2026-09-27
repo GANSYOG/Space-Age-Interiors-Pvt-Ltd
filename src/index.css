@@ -1,3 +1,173 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --purple-deep: #2b0a54;
+  --purple: #4c1d95;
+  --violet: #6d28d9;
+  --magenta: #c026d3;
+  --orange: #ee4b1f;
+  --orange-soft: #f0642f;
+  --lavender: #ede9fe;
+  --ink: #f5f3ff;
+  --muted: #c4b5fd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #1e0a3c;
+  color: #f5f3ff;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #ee4b1f;
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #1e0a3c; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #6d28d9, #c026d3); border-radius: 8px; }
+
+/* ---------- Custom cursor ---------- */
+.cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #ee4b1f;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s;
+}
+.cursor-dot.hovering {
+  width: 52px;
+  height: 52px;
+  background: rgba(238, 75, 31, 0.15);
+  border: 1px solid rgba(238, 75, 31, 0.5);
+}
+
+/* ---------- Signature gradient surfaces ---------- */
+.grad-page {
+  background:
+    radial-gradient(700px 380px at 8% 0%, rgba(192, 38, 211, 0.35), transparent 60%),
+    radial-gradient(800px 420px at 95% 10%, rgba(238, 75, 31, 0.22), transparent 55%),
+    radial-gradient(900px 600px at 50% 110%, rgba(109, 40, 217, 0.45), transparent 60%),
+    linear-gradient(165deg, #2b0a54 0%, #3b1170 45%, #2b0a54 100%);
+}
+
+.grad-text {
+  background: linear-gradient(92deg, #a78bfa 0%, #e879f9 45%, #fb923c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grad-btn {
+  background: linear-gradient(135deg, #f0642f 0%, #ee4b1f 55%, #d63a12 100%);
+  box-shadow: 0 10px 28px -8px rgba(238, 75, 31, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s;
+}
+.grad-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -8px rgba(238, 75, 31, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- Glass surfaces ---------- */
+.glass {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.glass-strong {
+  background: rgba(30, 10, 60, 0.55);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ---------- Floating icon tiles (landing reference) ---------- */
+.float-tile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 40px -12px rgba(20, 5, 45, 0.55);
+  animation: floaty 6s ease-in-out infinite;
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+/* ---------- Hero slow zoom ---------- */
+.hero-zoom {
+  animation: slowZoom 22s ease-in-out infinite alternate;
+}
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.09); }
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Marquee ---------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 26s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- Donut charts (infographic reference) ---------- */
+.donut {
+  border-radius: 9999px;
+  background: conic-gradient(#ee4b1f var(--p), rgba(255, 255, 255, 0.14) 0);
+}
+.donut::after {
+  content: '';
+  position: absolute;
+  inset: 14%;
+  border-radius: 9999px;
+  background: #2b0a54;
+}
+
+/* ---------- Invoice card (invoice reference) ---------- */
+.invoice-card {
+  border-radius: 26px;
+  background:
+    radial-gradient(560px 300px at 88% -6%, rgba(238, 75, 31, 0.5), transparent 60%),
+    radial-gradient(480px 300px at -8% 28%, rgba(192, 38, 211, 0.5), transparent 60%),
+    linear-gradient(160deg, #2b0a54 0%, #4c1d95 48%, #6d28d9 100%);
+  box-shadow: 0 40px 90px -30px rgba(10, 2, 25, 0.8);
+}
+
+@media print {
+  body * { visibility: hidden; }
+  .invoice-card, .invoice-card * { visibility: visible; }
+  .invoice-card { position: absolute; inset: 0; margin: 0; border-radius: 0; box-shadow: none; }
+}
