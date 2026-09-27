@@ -670,7 +670,7 @@ export default function App() {
                   <div>
                     <div className="flex justify-between items-end mb-4">
                       <label className="text-purple-100 font-extrabold text-sm uppercase tracking-widest">Area (Sq. Ft.)</label>
-                      <span className="text-[#fb923c] text-2xl font-black">{sqFt.toLocaleString('en-IN')} sq.ft</span>
+                      <div className="flex items-center text-[#fb923c] text-2xl font-black"><input type="number" min="500" max="100000" value={sqFt} onChange={(e) => setSqFt(Number(e.target.value))} className="bg-transparent w-28 text-right outline-none border-b border-dashed border-[#fb923c]/50 focus:border-[#fb923c] mr-2" /> sq.ft</div>
                     </div>
                     <input type="range" min="500" max="100000" step="100" value={sqFt} onChange={(e) => setSqFt(Number(e.target.value))} className="w-full accent-[#ee4b1f] h-1.5" />
                     <div className="flex justify-between text-[11px] font-bold text-purple-300/70 mt-2"><span>500 sq.ft</span><span>1,00,000+ sq.ft</span></div>
@@ -678,7 +678,7 @@ export default function App() {
                   <div>
                     <div className="flex justify-between items-end mb-4">
                       <label className="text-purple-100 font-extrabold text-sm uppercase tracking-widest">Design & Material Quality (Rate per Sq. Ft.)</label>
-                      <span className="text-[#fb923c] text-2xl font-black">₹{ratePerSqFt.toLocaleString('en-IN')}</span>
+                      <div className="flex items-center text-[#fb923c] text-2xl font-black"><span className="mr-1">₹</span><input type="number" min="999" max="100000" value={ratePerSqFt} onChange={(e) => setRatePerSqFt(Number(e.target.value))} className="bg-transparent w-32 outline-none border-b border-dashed border-[#fb923c]/50 focus:border-[#fb923c]" /></div>
                     </div>
                     <input type="range" min="999" max="100000" step="100" value={ratePerSqFt} onChange={(e) => setRatePerSqFt(Number(e.target.value))} className="w-full accent-[#ee4b1f] h-1.5" />
                     <div className="flex justify-between text-[11px] font-bold text-purple-300/70 mt-2"><span>₹999 (Essential)</span><span>₹1,00,000 (Ultra Luxury)</span></div>
